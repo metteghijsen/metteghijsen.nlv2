@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "lintfix": "eslint --ext .ts,.js,.vue . --fix"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "@vueuse/core": "^9.10.0",
+    "@vueuse/nuxt": "^9.10.0",
+    "eslint": "^8.31.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "eslint-plugin-vuejs-accessibility": "^2.0.0",
+    "nuxt": "^3.3.1",
+    "nuxt-security": "^0.12.0",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.4",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.0.0",
+    "@nuxtjs/robots": "^3.0.0",
+    "@pinia/nuxt": "^0.4.6",
+    "@vueuse/motion": "^2.0.0",
+    "lucide": "^0.292.0",
+    "lucide-vue-next": "^0.292.0",
+    "pinia": "^2.0.28",
+    "purgecss": "^5.0.0",
+    "vue3-autocounter": "^1.0.6"
+  }
+}
