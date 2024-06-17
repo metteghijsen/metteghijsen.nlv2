@@ -55,7 +55,7 @@
             />
           </router-link>
 
-          <NuxtLink to="https://github.com/metteghijsen/semester6-website" class="p-1 mx-2 ml-12 hover:bg-slate-100  dark:hover:bg-slate-700 rounded-md ease-in-out transition-colors">
+          <NuxtLink to="https://github.com/metteghijsen/metteghijsen.nlv2" class="p-1 mx-2 ml-12 hover:bg-slate-100  dark:hover:bg-slate-700 rounded-md ease-in-out transition-colors">
             <div v-if="isDarkMode == true">
               <Github class="h-3 w-3" color="white" />
             </div>
