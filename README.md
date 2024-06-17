@@ -12,7 +12,7 @@ Welcome to the GitHub repository for my updated portfolio website. After two yea
 - Interactive Elements: Dynamic content and animations for enhanced user experience.
 
 ### Version 1
-If you're interested in my first portfolio, created with basic technologies, you can find it here.
+If you're interested in my first portfolio, created with basic technologies, you can find it [here](https://github.com/metteghijsen/metteghijsen.nl).
 
 ### Contact Me
 Have questions or feedback? Feel free to email me at info@metteghijsen.nl.
