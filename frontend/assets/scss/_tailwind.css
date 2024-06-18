@@ -20,9 +20,9 @@
     --color-green-60: #a7f4dd;
     --color-green-40: #c4f7e8;
 
-    --color-blue-100: #8aa2ff;
-    --color-blue-60: #b9c7ff;
-    --color-blue-40: #d0daff;
+    --color-blue-100: #00ccff;
+    --color-blue-60: #66e0ff;
+    --color-blue-40: #b2f0ff;
 
     --color-purple-100: #ba75ff;
     --color-purple-60: #d6acff;
@@ -56,6 +56,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Regular scrollbar */
@@ -80,11 +81,11 @@ html, body {
 }
 
 .dark ::-webkit-scrollbar-track {
-    background: rgb(30,40,59);
+    background: rgb(16, 24, 41);
 }
 
 .dark ::-webkit-scrollbar-thumb {
-    background: var(--color-blue-40);
+    background: var(--color-blue-60);
     border-radius: 15px; 
 }
 
