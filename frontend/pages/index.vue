@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div role="presentation" @mousemove="handleMouseMove">
     <div
       :class="[darkModeClass, 'gradient-background-light']"
       class="pt-14 pb-10 flex flex-col items-start justify-center min-h-[100vh]"
     >
       <div class="lg:max-w-[1400px] md:max-w-[800px] max-w-[600px] lg:px-[300px] px-7">
         <div class="mt-7 cursor-default lg:text-[70px] md:text-[45px] text-[30px] poppins whitespace-nowrap text-black dark:text-white">
-          <h1 v-motion-slide-bottom class="transition custom-hover dark:custom-hover-darkmode">
+          <h1 v-motion-slide-bottom class="dark:custom-hover-darkmode transition-all ease-in-out">
             I'm a webdeveloper, <br> building things <br> on the internet.
           </h1>
         </div>
@@ -22,19 +22,19 @@
       </div> -->
       </div>
     </div>
-    <div class="bg-white dark:bg-black cursor-default flex justify-center py-10 border-y-slate-200 dark:border-y-slate-600 border-y-[1px]">
+    <div class="bg-white dark:bg-[#020520] cursor-default flex justify-center py-10 border-y-slate-200 dark:border-y-slate-600 border-y-[1px]">
       <div v-motion-slide-visible-once-bottom class="lg:max-w-[1400px] md:max-w-[800px] max-w-[600px] px-6">
-        <div class="title-outline poppins lg:text-[70px] md:text-[45px] text-[30px] leading-[44px]">
+        <div class="title-outline dark:title-outline-darkmode poppins lg:text-[70px] md:text-[45px] text-[30px] leading-[44px]">
           <h1>nice to meet you!</h1>
         </div>
         <div class="lg:text-[70px] md:text-[45px] text-[30px] poppins whitespace-nowrap dark:text-white text-black">
           <h1>nice to meet you! </h1>
         </div>
-        <div class="title-outline poppins lg:text-[70px] md:text-[45px] text-[30px] leading-[44px]">
+        <div class="title-outline dark:title-outline-darkmode poppins lg:text-[70px] md:text-[45px] text-[30px] leading-[44px]">
           <h1>nice to meet you!</h1>
         </div>
 
-        <div v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
+        <div id="about" v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
           <NuxtImg src="/img/mette.png" alt="mette" class="rounded-3xl lg:w-1/3 md:w-1/3 w-2/3 mr-4 object-cover" />
           <div class="p-7 w-full">
             <UiTypography type="p" size="paragraph-extra-small" class="pb-3">
@@ -74,9 +74,9 @@
       </div>
     </div>
     <UiContainer>
-      <div>
+      <div id="cases">
         <LayoutTaskbar />
-        <div v-motion-slide-visible-once-bottom class="grid md:grid-cols-2 md:gap-1 grid-cols-1 gap-0.5">
+        <div v-motion-slide-visible-once-bottom class="grid md:grid-cols-2 md:gap-4 grid-cols-1 gap-0.5">
           <UiProject
             to="/"
             image-name="onderwegapp"
@@ -129,7 +129,7 @@
         <div>
           <div
             v-motion-slide-visible-once-bottom
-            class="md:grid md:grid-cols-3 md:gap-3 mt-8 bg-white dark:bg-black py-7 rounded-3xl overflow-none"
+            class="md:grid md:grid-cols-3 md:gap-3 mt-8 bg-white dark:bg-[#020520] py-7 rounded-3xl overflow-none"
           >
             <div class="mb-4 md:mb-0 text-center">
               <UiTypography class="mb-1">
@@ -228,7 +228,6 @@ export default {
     },
     handleScroll () {
       const scrollY = window.scrollY
-      console.log(window.scrollY)
 
       if (scrollY >= 3500 && this.finishedCounting === false) {
         this.finishedCounting = true
@@ -239,6 +238,13 @@ export default {
       this.$refs.semesterCounter.start()
       this.$refs.projectCounter.start()
       this.$refs.deliverableCounter.start()
+    },
+    handleMouseMove (event) {
+      const movingBackground = document.querySelectorAll('.movingBackground')
+      movingBackground.forEach((background) => {
+        const rect = background.getBoundingClientRect()
+        background.style.backgroundPosition = `${event.clientX - rect.left - 575}px ${event.clientY - rect.top - 575}px`
+      })
     }
   }
 }
@@ -250,23 +256,28 @@ export default {
   src: url("../fonts/Poppins-Bold.woff") format("woff");
 }
 
-.custom-hover:hover{
+.custom-hover {
+  transition: color 0.2s ease !important;
+}
+
+.custom-hover:hover {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
   color: transparent;
-  transition: all .2s ease-in !important;
+}
+
+.dark .dark\:custom-hover-darkmode {
+  transition: color 0.5s ease !important;
 }
 
 .dark .dark\:custom-hover-darkmode:hover {
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 1px;
   color: transparent;
-  transition: all .2s ease-in !important;
 }
 
 .transition {
-  transition-property: color, text-stroke;
-  transition: all .5s ease-in !important;
+  transition: all 0.5s ease !important;
 }
 
 .poppins h1 {
@@ -275,16 +286,28 @@ export default {
 
 .title-outline h1 {
   white-space: nowrap;
-
-  -webkit-text-stroke-color: #333;
+  -webkit-text-stroke-color: #2f3141;
   -webkit-text-stroke-width: 2px;
   color: transparent;
-  transition: color .5s ease !important;
+  transition: color 0.5s ease !important;
 }
 
 .title-outline h1:hover {
+  color: #2f3141;
+  transition: color 0.5s ease !important;
+}
+
+.dark .dark\.title-outline-darkmode h1 {
+  white-space: nowrap;
+  -webkit-text-stroke-color: #333;
+  -webkit-text-stroke-width: 2px;
+  color: transparent;
+  transition: color 0.5s ease !important;
+}
+
+.dark .dark\.title-outline-darkmode h1:hover {
   color: #333;
-  transition: color .5s ease !important;
+  transition: color 0.5s ease !important;
 }
 
 .triangle {
@@ -292,4 +315,5 @@ export default {
   border-right: 20px solid transparent;
   border-bottom: 35px solid var(--color-blue-100);
 }
+
 </style>
