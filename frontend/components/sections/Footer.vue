@@ -1,7 +1,7 @@
 <template>
   <div :class="[darkModeClass, 'gradient-background-light']">
     <div class="flex justify-center">
-      <div class="w-full bg-white100 dark:bg-black grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 gap-2 lg:px-[400px] px-[200px] py-[120px]">
+      <div class="w-full bg-white100 dark:bg-[#020520] grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 gap-2 lg:px-[400px] px-[200px] py-[120px]">
         <UiLogo image-name="fontys" to="https://www.fontys.nl/Home.htm" />
         <UiLogo image-name="kea" to="https://kea.dk/en/" />
         <UiLogo image-name="livewall" to="https://www.livewall.nl/" />
@@ -74,7 +74,7 @@ export default {
 }
 
 .dark .gradient-background-light {
-  background: linear-gradient(-45deg, #000000, #023a28, #000000, #011c36);
+  background: linear-gradient(-45deg, #020520, #03583d, #020520, #022d54);
   background-size: 250% 250%;
   animation: gradient 20s ease infinite;
 }

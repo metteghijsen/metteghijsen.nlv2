@@ -17,7 +17,7 @@
 }
 
 .dark .gradient-background-light {
-  background: linear-gradient(-45deg, #000000, #023a28, #000000, #011c36);
+  background: linear-gradient(-45deg, #020520, #023a28, #020520, #011c36);
   background-size: 250% 250%;
   animation: gradient 20s ease infinite;
 }

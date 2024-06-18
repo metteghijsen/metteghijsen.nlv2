@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="justify-center flex mb-[135px]">
-      <div class="bg-white100 dark:bg-black border-b-slate-200 dark:border-b-slate-600 border-b-2 py-4 flex flex-row items-center w-full fixed top-0 z-40">
+      <div class="bg-white100 dark:bg-[#020520] border-b-slate-200 dark:border-b-slate-600 border-b-2 py-4 flex flex-row items-center w-full fixed top-0 z-40">
         <NuxtLink v-if="isMenu==true" @click="toggleMenu">
           <UiTypography type="p" size="heading4" class="font-bold pl-8 whitespace-nowrap">
             Mette Ghijsen
@@ -14,7 +14,7 @@
         </NuxtLink>
         <div class="flex justify-end w-full">
           <div v-if="isMenu == true">
-            <button class="lg:hidden p-1 mr-10 dark:hover:bg-black hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
+            <button class="lg:hidden p-1 mr-10 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
               <div v-if="isDarkMode == true">
                 <X class="h-3 w-3" color="white" />
               </div>
@@ -24,7 +24,7 @@
             </button>
           </div>
           <div v-else>
-            <button class="lg:hidden p-1 mr-10 dark:hover:bg-black hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
+            <button class="lg:hidden p-1 mr-10 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
               <div v-if="isDarkMode == true">
                 <Menu class="h-3 w-3" color="white" />
               </div>
@@ -82,12 +82,12 @@
           <slot />
         </div>
         <div v-else>
-          <div v-if="isMenu" class="lg:hidden top-12 flex justify-center items-center flex-col z-30 left-0 fixed w-full bg-white100 border-b-slate-200 dark:bg-black dark:border-b-slate-600">
+          <div v-if="isMenu" class="lg:hidden top-12 flex justify-center items-center flex-col z-30 left-0 fixed w-full bg-white100 border-b-slate-200 dark:bg-[#020520] dark:border-b-slate-600">
             <router-link
               v-for="(link, index) in links"
               :key="index"
               :to="link.to"
-              class="link dark:hover:bg-black hover:bg-slate-100 py-5 w-full border-b-slate-200 dark:border-b-slate-600 border-b-2 text-center"
+              class="link dark:hover:bg-[#020520] hover:bg-slate-100 py-5 w-full border-b-slate-200 dark:border-b-slate-600 border-b-2 text-center"
               @click="toggleMenu"
             >
               <UiTypography type="p" size="paragraph-small">
@@ -105,7 +105,7 @@
                 </div>
               </NuxtLink>
 
-              <button class="p-1 my-4 dark:hover:bg-black hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
+              <button class="p-1 my-4 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
                 <div v-if="isDarkMode == true">
                   <Moon class="h-3 w-3" color="white" />
                 </div>
@@ -143,9 +143,9 @@ onMounted(() => {
 })
 
 const links = [
-  { text: 'About', to: '/about' },
-  { text: 'Cases', to: '/cases' },
-  { text: 'Contact', to: '/contact' }
+  { text: 'About', to: '#about' },
+  { text: 'Cases', to: '#cases' },
+  { text: 'Contact', to: '#contact' }
 ]
 
 const isActive = (route) => {
