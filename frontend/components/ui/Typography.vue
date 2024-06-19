@@ -65,7 +65,7 @@ export default defineComponent({
       }
 
       .paragraph-extra-small{
-        @apply font-poppins md:text-[16px] text-[12px] leading-[20px]
+        @apply font-poppins lg:text-[20px] md:text-[16px] text-[12px] leading-[20px] lg:leading-[24px]
       }
 
       /* Button fonts */
