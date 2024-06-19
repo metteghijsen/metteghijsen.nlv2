@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="to">
-    <div class="movingBackground background z-0 lg:h-[700px] md:max-w-[680px] w-full flex items-center justify-center rounded-3xl">
-      <div class="z-10 bg-white100 opacity-90 dark:bg-[#020520] dark:border-slate-600 border-2 lg:h-[696px] md:max-w-[676px] flex flex-col items-center rounded-3xl dark:hover:border-blue100 hover:border-blue100 transition-all ease-in-out duration-150">
+    <div class="movingBackground background z-0 xl:h-[800px] lg:h-[720px] lg:max-w-[720px] md:max-w-[680px] w-full flex items-center justify-center rounded-3xl">
+      <div class="bg-white100 opacity-90 dark:bg-[#020520] dark:border-slate-600 border-2 flex flex-col items-center rounded-3xl dark:hover:border-blue100 hover:border-blue100 transition-all ease-in-out duration-500 xl:h-[792px] lg:h-[692px] w-full md:max-w-[676px] lg:w-[calc(100%-8px)]">
         <NuxtImg :src="`/img/projects/${imageName}.png`" :alt="imageName" class="object-cover aspect-video w-full max-h-[400px] mb-4 rounded-t-3xl" />
         <div class="flex flex-col mx-10">
           <UiTypography type="h3" size="heading3" class="pb-1">
@@ -54,8 +54,8 @@ export default defineComponent({
 
 <style>
 .background {
-  --background-size-width: 1400px;
-  --background-size-height: 1400px;
+  --background-size-width: 700px;
+  --background-size-height: 700px;
   --background-position-x: center;
   --background-position-y: center;
   background-image: radial-gradient(#00ccff 0%, #00000000 65%, #00000000 99%);

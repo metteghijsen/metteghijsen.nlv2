@@ -76,12 +76,12 @@
     <UiContainer>
       <div id="cases">
         <LayoutTaskbar />
-        <div v-motion-slide-visible-once-bottom class="grid md:grid-cols-2 md:gap-4 grid-cols-1 gap-0.5">
+        <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5">
           <UiProject
             to="/"
             image-name="onderwegapp"
             project-name="Onderwegapp"
-            project-description="De gebruiker geeft een startstation en eindstation aan. Spotify zal een afspeellijst voor je gaan genereren met dezelfde lengte als de rit die je zal gaan maken. Er wordt gebruik gemaakt van de Spotify API zodat de afspeellijst muziek bevat die overeenkomt met de luisteractiviteit van de gebruiker. Daarnaast zullen er in de lijst ook liedjes staan van artiesten die gepromoot moeten worden. "
+            project-description="De gebruiker geeft een startstation en eindstation aan. Spotify zal een afspeellijst voor je gaan genereren met dezelfde lengte als de rit die je zal gaan maken. Er wordt gebruik gemaakt van de Spotify API zodat de afspeellijst muziek bevat die overeenkomt met de luisteractiviteit van de gebruiker. "
           />
           <UiProject
             to="/"
