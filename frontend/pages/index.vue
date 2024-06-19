@@ -241,9 +241,18 @@ export default {
     },
     handleMouseMove (event) {
       const movingBackground = document.querySelectorAll('.movingBackground')
+
       movingBackground.forEach((background) => {
-        const rect = background.getBoundingClientRect()
-        background.style.backgroundPosition = `${event.clientX - rect.left - 575}px ${event.clientY - rect.top - 575}px`
+        const elementProperties = getComputedStyle(background)
+        const rect = background.getBoundingClientRect() // Vraag positie op van het element op de pagina
+
+        // Bereken de helft van de achtergrondgrootte
+        const backgroundSizeWidth = parseInt(elementProperties.getPropertyValue('--background-size-width').replace('px', '')) / 3
+        const backgroundSizeHeight = parseInt(elementProperties.getPropertyValue('--background-size-height').replace('px', '')) / 3
+
+        // Stel de achtergrondpositie in met de aangepaste berekeningen
+        background.style.setProperty('--background-position-x', (event.clientX - rect.left - backgroundSizeWidth) + 'px')
+        background.style.setProperty('--background-position-y', (event.clientY - rect.top - backgroundSizeHeight) + 'px')
       })
     }
   }
@@ -315,5 +324,4 @@ export default {
   border-right: 20px solid transparent;
   border-bottom: 35px solid var(--color-blue-100);
 }
-
 </style>
