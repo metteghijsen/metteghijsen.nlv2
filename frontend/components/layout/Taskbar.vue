@@ -2,7 +2,7 @@
   <div>
     <div class="justify-center flex mb-[135px]">
       <div class="bg-white100 dark:bg-[#020520] border-b-slate-200 dark:border-b-slate-600 border-b-2 py-4 flex flex-row items-center w-full fixed top-0 z-40">
-        <NuxtLink v-if="isMenu==true" @click="toggleMenu">
+        <NuxtLink v-if="isMenu" @click="toggleMenu">
           <UiTypography type="p" size="heading4" class="font-bold pl-8 whitespace-nowrap">
             Mette Ghijsen
           </UiTypography>
@@ -13,24 +13,14 @@
           </UiTypography>
         </NuxtLink>
         <div class="flex justify-end w-full">
-          <div v-if="isMenu == true">
+          <div v-if="isMenu">
             <button class="lg:hidden p-1 mr-10 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
-              <div v-if="isDarkMode == true">
-                <X class="h-3 w-3" color="white" />
-              </div>
-              <div v-else>
-                <X class="h-3 w-3" />
-              </div>
+              <X class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
             </button>
           </div>
           <div v-else>
             <button class="lg:hidden p-1 mr-10 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
-              <div v-if="isDarkMode == true">
-                <Menu class="h-3 w-3" color="white" />
-              </div>
-              <div v-else>
-                <Menu class="h-3 w-3" />
-              </div>
+              <Menu class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
             </button>
           </div>
         </div>
@@ -55,22 +45,17 @@
             />
           </router-link>
 
-          <NuxtLink to="https://github.com/metteghijsen/metteghijsen.nlv2" class="p-1 mx-2 ml-12 hover:bg-slate-100  dark:hover:bg-slate-700 rounded-md ease-in-out transition-colors">
-            <div v-if="isDarkMode == true">
-              <Github class="h-3 w-3" color="white" />
-            </div>
-            <div v-else>
-              <Github class="h-3 w-3" />
-            </div>
+          <button class="p-1 ml-12 dark:hover:bg-slate-700 hover:bg-slate-100 rounded-md ease-in-out transition-colors">
+            <Languages class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
+          </button>
+
+          <NuxtLink to="https://github.com/metteghijsen/metteghijsen.nlv2" class="p-1 mx-2 mr-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md ease-in-out transition-colors">
+            <Github class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
           </NuxtLink>
 
           <button class="p-1 mr-10 dark:hover:bg-slate-700 hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
-            <div v-if="isDarkMode == true">
-              <Moon class="h-3 w-3" color="white" />
-            </div>
-            <div v-else>
-              <Sun class="h-3 w-3" />
-            </div>
+            <Moon v-if="isDarkMode" class="h-3 w-3" color="white" />
+            <Sun v-else class="h-3 w-3" color="black" />
           </button>
         </div>
       </div>
@@ -96,22 +81,17 @@
             </router-link>
 
             <div class="flex justify-center items-center w-full">
-              <NuxtLink to="https://github.com/metteghijsen/semester6-website" class="p-1 hover:bg-slate-100  dark:hover:bg-blackrounded-md ease-in-out transition-colors">
-                <div v-if="isDarkMode == true">
-                  <Github class="h-3 w-3" color="white" />
-                </div>
-                <div v-else>
-                  <Github class="h-3 w-3" />
-                </div>
+              <button class="p-1 my-4 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
+                <Languages class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
+              </button>
+
+              <NuxtLink to="https://github.com/metteghijsen/semester6-website" class="p-1 hover:bg-slate-100 dark:hover:bg-black rounded-md ease-in-out transition-colors">
+                <Github class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
               </NuxtLink>
 
               <button class="p-1 my-4 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
-                <div v-if="isDarkMode == true">
-                  <Moon class="h-3 w-3" color="white" />
-                </div>
-                <div v-else>
-                  <Sun class="h-3 w-3" />
-                </div>
+                <Moon v-if="isDarkMode" class="h-3 w-3" color="white" />
+                <Sun v-else class="h-3 w-3" color="black" />
               </button>
             </div>
           </div>
@@ -122,24 +102,37 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { Sun, Moon, Github, Menu, X } from 'lucide-vue-next'
+import { ref, onMounted, watch } from 'vue'
+import { Sun, Moon, Github, Menu, X, Languages } from 'lucide-vue-next'
 
 const isDarkMode = ref(false)
 const isMenu = ref(false)
+
+const applyDarkMode = () => {
+  if (isDarkMode.value) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+}
 
 onMounted(() => {
   const storedDarkMode = localStorage.getItem('darkMode')
   if (storedDarkMode) {
     isDarkMode.value = JSON.parse(storedDarkMode)
-
-    // Apply dark mode styles after the component is mounted
-    if (isDarkMode.value) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
+    applyDarkMode()
+  } else if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    isDarkMode.value = true
+    applyDarkMode()
+  } else {
+    isDarkMode.value = false
+    applyDarkMode()
   }
+})
+
+watch(isDarkMode, (newVal) => {
+  localStorage.setItem('darkMode', JSON.stringify(newVal))
+  applyDarkMode()
 })
 
 const links = [
@@ -157,14 +150,6 @@ const isActive = (route) => {
 
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value
-
-  localStorage.setItem('darkMode', JSON.stringify(isDarkMode.value))
-
-  if (isDarkMode.value) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
 }
 
 const toggleMenu = () => {
