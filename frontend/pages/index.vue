@@ -82,6 +82,7 @@
             image-name="onderwegapp"
             project-name="Onderwegapp"
             project-description="De gebruiker geeft een startstation en eindstation aan. Spotify zal een afspeellijst voor je gaan genereren met dezelfde lengte als de rit die je zal gaan maken. Er wordt gebruik gemaakt van de Spotify API zodat de afspeellijst muziek bevat die overeenkomt met de luisteractiviteit van de gebruiker. "
+            stakeholder="Warner Music, 9292"
           />
           <UiProject
             to="/"
@@ -90,14 +91,25 @@
             project-description="
             Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
 "
+            stakeholder="Warner Music"
           />
           <UiProject
             to="/"
+            image-name="werkenbijpartou"
+            project-name="Werken Bij Partou"
+            project-description="
+            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
+"
+            stakeholder="Partou"
+          />
+          <UiProject
+            to="printpal"
             image-name="printpal"
             project-name="Printpal"
             project-description="
             Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
 "
+            stakeholder="Sogeti"
           />
 
           <UiProject
@@ -107,23 +119,26 @@
             project-description="
             Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
 "
+            stakeholder="Fontys Rockacademie"
           />
 
           <UiProject
             to="/"
             image-name="fontys"
-            project-name="Fontys Engineering"
+            project-name="Engineering & Technology in Practice"
             project-description="
             Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
 "
+            stakeholder="Fontys Engineering"
           />
           <UiProject
             to="/"
             image-name="samu"
-            project-name="Salve Mundi"
+            project-name="Mediacommissie"
             project-description="
             Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
 "
+            stakeholder="Salve Mundi"
           />
         </div>
         <div>
