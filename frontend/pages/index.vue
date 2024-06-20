@@ -42,7 +42,7 @@
               UX-designer. Welkom op mijn portfolio website!
               <br><br>
               Ik ben altijd al graag creatief bezig geweest, wat uitstekend samengaat met mijn enthousiasme voor
-              computers. Op dit moment zit ik in mijn zevende semester van mijn studie ICT & Media Design aan Fontys
+              computers. Op dit moment zit ik in het vierde jaar van mijn studie ICT & Media Design aan Fontys
               Hogeschool in Eindhoven, en volg ik de minor Digital Product Development aan de Universiteit van Kunst &
               Technologie in Kopenhagen 🇩🇰.
               In februari 2025 ga ik beginnen met mijn afstudeerstage, en ik ben druk op zoek naar een nieuwe uitdaging!
