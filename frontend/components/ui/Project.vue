@@ -1,9 +1,12 @@
 <template>
   <NuxtLink :to="to">
-    <div class="movingBackground background z-0 xl:h-[800px] lg:h-[720px] lg:max-w-[720px] md:max-w-[680px] w-full flex items-center justify-center rounded-3xl">
-      <div class="bg-white100 opacity-90 dark:bg-[#020520] dark:border-slate-600 border-2 flex flex-col items-center rounded-3xl dark:hover:border-blue100 hover:border-blue100 transition-all ease-in-out duration-500 xl:h-[792px] lg:h-[692px] w-full md:max-w-[676px] lg:w-[calc(100%-8px)]">
+    <div class="movingBackground background z-0 xl:h-[750px] lg:h-[720px] lg:max-w-[720px] md:max-w-[680px] w-full flex items-center justify-center rounded-3xl">
+      <div class="bg-white100 opacity-90 dark:bg-[#020520] dark:border-slate-600 border-2 flex flex-col items-center rounded-3xl dark:hover:border-blue100 hover:border-blue100 transition-all ease-in-out duration-500 xl:h-[742px] lg:h-[692px] w-full md:max-w-[676px] lg:w-[calc(100%-8px)]">
         <NuxtImg :src="`/img/projects/${imageName}.png`" :alt="imageName" class="object-cover aspect-video w-full max-h-[400px] mb-4 rounded-t-3xl" />
-        <div class="flex flex-col mx-10">
+        <div class="flex flex-col relative mx-10 h-full">
+          <UiTypography type="p" size="paragraph-extra-small" class="uppercase opacity-70 pb-1 font-semibold">
+            {{ stakeholder }}
+          </UiTypography>
           <UiTypography type="h3" size="heading3" class="pb-1">
             {{ projectName }}
           </UiTypography>
@@ -29,6 +32,10 @@ export default defineComponent({
       required: true
     },
     projectDescription: {
+      type: String,
+      required: true
+    },
+    stakeholder: {
       type: String,
       required: true
     },
