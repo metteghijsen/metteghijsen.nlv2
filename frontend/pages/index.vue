@@ -76,8 +76,8 @@
       </div>
     </div>
     <UiContainer>
+      <LayoutNavbar />
       <div id="cases">
-        <LayoutTaskbar />
         <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5">
           <UiProject
             to="/"
