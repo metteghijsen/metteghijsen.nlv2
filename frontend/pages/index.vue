@@ -60,8 +60,10 @@
           </div>
         </div>
         <div v-motion-slide-visible-once-bottom class="w-full lg:flex lg:flex-row grid grid-cols-5 gap-2">
-          <UiLogoCompetence image-name="html" />
-          <UiLogoCompetence image-name="css" />
+          <UiLogoCompetence class="dark:hidden flex" image-name="html" />
+          <UiLogoCompetence class="dark:hidden flex" image-name="css" />
+          <UiLogoCompetence class="dark:flex hidden" image-name="htmldark" />
+          <UiLogoCompetence class="dark:flex hidden" image-name="cssdark" />
           <UiLogoCompetence image-name="tailwind" />
           <UiLogoCompetence image-name="sass" />
           <UiLogoCompetence image-name="javascript" />
