@@ -1,0 +1,31 @@
+name: DEPLOY METTEGHIJSEN
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+      - name: Installing project dependencies
+        working-directory: ./frontend
+        run: npm install
+
+      - name: Building the project
+        working-directory: ./frontend
+        run: npx nuxi generate -y
+
+      - name: FTP the output
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.metteghijsen.nl
+          username: metteftp@metteghijsen.nl
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./frontend/dist/
+          server-dir: ./metteghijsen.nl/
+          dry-run: true
