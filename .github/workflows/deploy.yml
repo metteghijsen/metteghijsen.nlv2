@@ -21,7 +21,7 @@ jobs:
         run: npx nuxi generate -y
 
       - name: FTP the output
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.metteghijsen.nl
           username: metteftp@metteghijsen.nl
