@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="justify-center flex mb-[135px]">
+    <div class="justify-center flex">
       <div class="bg-white100 dark:bg-[#020520] border-b-slate-200 dark:border-b-slate-600 border-b-2 py-4 flex flex-row items-center w-full fixed top-0 z-40">
         <NuxtLink v-if="isMenu" @click="toggleMenu">
           <UiTypography type="p" size="heading4" class="font-bold pl-8 whitespace-nowrap">
