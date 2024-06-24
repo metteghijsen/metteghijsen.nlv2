@@ -53,7 +53,7 @@
               Salve Mundi. Hier versterk ik de mediacommissie door het maken van promotiemateriaal, en help ik de
               feestcommissie met het organiseren van feestjes. Ik ben ook regelmatig bij Hubble Community Café achter de
               tap te vinden. Daarnaast vind ik het leuk om me bezig te houden met videogames, gitaar spelen, (analoge)
-              fotografie, video-editing en tekenen.
+              fotografie, urbexen, video-editing en tekenen.
               <br><br>
               Voel je vrij om een kijkje te nemen op mijn portfolio website!
             </UiTypography>
