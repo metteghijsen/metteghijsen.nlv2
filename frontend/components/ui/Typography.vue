@@ -38,6 +38,10 @@ export default defineComponent({
 
       /* Headings */
 
+      .headinghuge{
+        @apply font-primary md:text-[110px] text-[70px] md:leading-[150px] leading-[120px]
+      }
+
       .heading1{
         @apply font-primary md:text-[60px] text-[46px] leading-[64px]
       }
@@ -66,16 +70,6 @@ export default defineComponent({
 
       .paragraph-extra-small{
         @apply font-poppins lg:text-[20px] md:text-[16px] text-[12px] leading-[20px] lg:leading-[24px]
-      }
-
-      /* Button fonts */
-
-      .button-big{
-        @apply font-button text-[24px] leading-[24px]
-      }
-
-      .button-regular{
-        @apply font-button text-[20px] leading-[24px]
       }
 
     </style>
