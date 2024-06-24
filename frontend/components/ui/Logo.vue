@@ -19,12 +19,10 @@ export default defineComponent({
       required: true
     },
     invert: {
-      type: Boolean,
-      required: true
+      type: Boolean
     },
     keepInverted: {
-      type: Boolean,
-      required: true
+      type: Boolean
     }
   }
 })
