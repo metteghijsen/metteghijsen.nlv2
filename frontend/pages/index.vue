@@ -75,10 +75,10 @@
         </div>
       </div>
     </div>
-    <UiContainer>
+    <UiContainer gradient>
       <LayoutNavbar />
       <div id="cases">
-        <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5">
+        <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5 pt-10">
           <UiProject
             to="/"
             image-name="onderwegapp"
@@ -276,7 +276,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @font-face {
   font-family: "Poppins-Bold";
   src: url("../fonts/Poppins-Bold.woff") format("woff");
