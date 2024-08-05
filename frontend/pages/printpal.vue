@@ -4,71 +4,46 @@
       :class="[darkModeClass, 'gradient-background-light']"
       class="select-none"
     >
-      <UiProjectHeader header-text="Printpal" description-text="The app to support people with depression." />
+      <UiProjectHeader header-text="Printpal" description-text="De app om mensen met depressie te ondersteunen." />
       <UiTextbox
         id="firstarticle"
-        title-text="A way to talk about your feelings"
+        title-text="Een manier om over je gevoelens te praten"
       >
-        Printpal is an application that supports people with depression by sending positive messages to a pocket printer. Within the app you get the ability to send prints to your friends and random people. You can also choose what kind of prints you want to receive at what time. If you are not near your printer, for example because you are traveling and did not bring it with you, the app offers you the possibility to view these prints anywhere, anytime! You can also chat with the people who have chosen to receive a response to their prints. This way you can talk together about sensitive topics, and get a glimpse into the mind of someone who is experiencing the same thing as you. By doing so, we hope to encourage people to start the conversation, and make new friends.
+        Printpal is een applicatie die mensen met depressie ondersteunt door positieve berichten naar een pocketprinter te sturen. Binnen de app krijg je de mogelijkheid om prints naar je vrienden en willekeurige mensen te sturen. Je kunt ook kiezen welke soort prints je wilt ontvangen en op welk tijdstip. Als je niet in de buurt van je printer bent, bijvoorbeeld omdat je reist en hem niet hebt meegenomen, biedt de app je de mogelijkheid om deze prints overal en altijd te bekijken! Je kunt ook chatten met de mensen die hebben gekozen om een reactie op hun prints te ontvangen. Op deze manier kun je samen praten over gevoelige onderwerpen en een kijkje nemen in de gedachten van iemand die hetzelfde doormaakt als jij. Hiermee hopen we mensen aan te moedigen om het gesprek aan te gaan en nieuwe vrienden te maken.
         <br><br>
-        I made this app together with my project group in the second year of my study ICT & Media Design (2022). We participated in the ProjectB competition of the company Sogeti. The assignment of the competition was: Create an IT innovation for people with a (mental) disorder or chronic illness. I pitched this idea together with a fellow group member in front of 120 people. Unfortunately, we did not win anything.
+        Ik heb deze app samen met mijn projectgroep gemaakt in het tweede jaar van mijn studie ICT & Media Design (2022). We deden mee aan de ProjectB-competitie van het bedrijf Sogeti. De opdracht van de competitie was: Creëer een IT-innovatie voor mensen met een (mentale) aandoening of chronische ziekte. Ik heb dit idee samen met een mede-groepslid gepresenteerd voor 120 mensen. Helaas hebben we niets gewonnen.
       </UiTextbox>
       <NuxtImg v-motion-slide-visible-once-bottom src="/img/projectimage3.png" class="w-full" />
 
       <UiTextbox
-        title-text="branding colors & typography"
+        title-text="branding kleuren & typografie"
       >
-        Because we work with quite a vulnerable target group, we want to make sure that people don't
-        gain anything negative from our app. We tried to apply this in our design. For example, we
-        paid attention to our color and font usage.
+        Omdat we werken met een vrij kwetsbare doelgroep, willen we ervoor zorgen dat mensen niets negatiefs aan onze app overhouden. Dit hebben we geprobeerd toe te passen in ons ontwerp. Zo hebben we bijvoorbeeld gelet op ons kleur- en lettertypegebruik.
         <br><br>
-        We ended up going with the colors green and blue. Our color research showed that green
-        stands for harmony, security and growth. This should radiate balance and peace.
-        Blue stands for security and trust. This should convey a sense of protection and
-        tranquility. For these reasons we went for these colors.
+        We hebben uiteindelijk gekozen voor de kleuren groen en blauw. Ons kleuronderzoek toonde aan dat groen staat voor harmonie, veiligheid en groei. Dit moet balans en rust uitstralen. Blauw staat voor veiligheid en vertrouwen. Dit moet een gevoel van bescherming en rust overbrengen. Om deze redenen hebben we voor deze kleuren gekozen.
         <br><br>
-        In addition, when designing the UI, we researched some design principles that we would like
-        to follow. Some examples of design principles that appear in our design are: "Less is More",
-        "Simple Language", "Hand Position Controls" and "Make Interface Elements Clearly Visible".
+        Daarnaast hebben we bij het ontwerpen van de UI enkele ontwerpprincipes onderzocht die we graag wilden volgen. Enkele voorbeelden van ontwerpprincipes die in ons ontwerp voorkomen zijn: "Minder is Meer", "Eenvoudige Taal", "Handpositie Besturing" en "Maak Interface Elementen Duidelijk Zichtbaar".
       </UiTextbox>
       <NuxtImg v-motion-slide-visible-once-bottom src="/img/projectimage2.png" class="w-full min-h-[500px] object-contain lg:py-14 py-3 px-4 xl:px-[350px]" />
       <UiTextbox
-        title-text="usertesting checking in with users"
+        title-text="gebruikerstesten inchecken met gebruikers"
       >
-        Before we landed on the UI we have now, we also had several rounds of testing with users who
-        fall within our target audience. For this we used the platform Maze. We set up a number of
-        scenarios beforehand which the users had to walk through. For example, "Create an account",
-        "Add a friend" or "Change your password". This way we could see if the UI looked logical to
-        users. From Maze, we always received heatmaps of where users clicked the most, and
-        percentages of how many users followed our selected path, and how many deviated. The
-        combination of all this data and the feedback we received gave us an overview of the best
-        way to position our elements so that it made sense to the users.
+        Voordat we de UI hadden die we nu hebben, hebben we ook verschillende rondes getest met gebruikers die binnen onze doelgroep vallen. Hiervoor gebruikten we het platform Maze. We stelden van tevoren een aantal scenario's op die de gebruikers moesten doorlopen. Bijvoorbeeld, "Maak een account aan", "Voeg een vriend toe" of "Verander je wachtwoord". Zo konden we zien of de UI logisch leek voor de gebruikers. Van Maze kregen we altijd heatmaps van waar gebruikers het meest klikten, en percentages van hoeveel gebruikers ons geselecteerde pad volgden en hoeveel afweken. De combinatie van al deze gegevens en de feedback die we ontvingen gaf ons een overzicht van de beste manier om onze elementen te positioneren zodat het logisch was voor de gebruikers.
         <br>
         <br>
-        <b> Preferences & Settings </b>
+        <b>Voorkeuren & Instellingen</b>
         <br>
-        Overall, we received very positive feedback on the user experience. Because we stayed as
-        close as possible to the human interface guidelines of Apple and Google, our testers knew
-        their way around the prototype with ease. Yet for some, the difference between settings and
-        the preferences was unclear. Therefore we decided to make the preferences a tab within the
-        settings. This way it was much clearer for the users.
+        Over het algemeen kregen we zeer positieve feedback over de gebruikerservaring. Omdat we zo dicht mogelijk bij de human interface richtlijnen van Apple en Google bleven, vonden onze testers hun weg gemakkelijk in het prototype. Toch was voor sommigen het verschil tussen instellingen en voorkeuren onduidelijk. Daarom besloten we de voorkeuren een tabblad binnen de instellingen te maken. Zo was het veel duidelijker voor de gebruikers.
         <NuxtImg v-motion-slide-visible-once-bottom src="/img/projectimage1.png" class="w-full pt-4" />
       </UiTextbox>
       <UiTextbox
-        title-text="building the prototype"
+        title-text="het prototype bouwen"
       >
-        After we tested our user interface, it was time to start building it after the initial
-        design. Our plan was to do this through a PWA (Progressive Web App). This is an application
-        that you can install through your browser on both your smartphone and desktop. The great
-        benefit of this is that you can use the app anywhere.
+        Nadat we onze gebruikersinterface hadden getest, was het tijd om deze na het eerste ontwerp te gaan bouwen. Ons plan was om dit te doen via een PWA (Progressive Web App). Dit is een applicatie die je via je browser op zowel je smartphone als desktop kunt installeren. Het grote voordeel hiervan is dat je de app overal kunt gebruiken.
 
         <br><br>
 
-        Because we worked with a PWA, we were able to create the app using HTML, CSS and JavaScript.
-        Since we would be having users in our app, we had very large amounts of data. This data had
-        to be stored somewhere. For this we used Firebase. A database tool from Google. My part of
-        the build process was to create the backend. So I created working login and registration
-        page using Firebase.
+        Omdat we met een PWA werkten, konden we de app maken met HTML, CSS en JavaScript. Aangezien we gebruikers in onze app zouden hebben, hadden we zeer grote hoeveelheden gegevens. Deze gegevens moesten ergens worden opgeslagen. Hiervoor gebruikten we Firebase. Een databasetool van Google. Mijn deel van het bouwproces was het maken van de backend. Dus ik maakte een werkende inlog- en registratiescherm met behulp van Firebase.
       </UiTextbox>
       <NuxtImg src="/img/projectimage4.png" class="w-full" />
       <UiContainer>
