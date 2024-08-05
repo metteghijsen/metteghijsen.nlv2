@@ -100,8 +100,7 @@
             image-name="werkenbijpartou"
             project-name="Werken Bij Partou"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            Tijdens mijn stage bij LiveWall heb ik meegewerkt aan de website voor werkenbijpartou. Ik heb Vue-componenten samengesteld met behulp van Tailwind. Werken aan deze site heeft mij ongelofelijk veel bijgebracht over samenwerken in repositories, nette code schrijven, en elkaars code lezen en begrijpen."
             stakeholder="Partou"
           />
           <UiProject
@@ -109,8 +108,7 @@
             image-name="printpal"
             project-name="Printpal"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            Printpal is een app die mensen met depressie helpt door positieve berichten naar een pocketprinter te sturen. Gebruikers kunnen prints versturen en ontvangen, en chatten met anderen. Ik ontwikkelde deze app met mijn projectgroep in mijn tweede jaar ICT & Media Design voor een wedstrijd van Sogeti."
             stakeholder="Sogeti"
           />
 
@@ -119,8 +117,7 @@
             image-name="nore"
             project-name="Nore"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            In mijn eerste jaar ICT & Media Design creëerde ik met drie klasgenoten de branding voor Tessa Meester van de band NORE. We hebben veel gebruikersonderzoek gedaan en ontwikkelden zo een unieke branding en website voor deze Nederlandse indie pop-rockband. "
             stakeholder="Fontys Rockacademie"
           />
 
@@ -129,8 +126,7 @@
             image-name="fontys"
             project-name="Engineering & Technology in Practice"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            Ik heb gewerkt bij Fontys Centre of Expertise. Mijn taak was het toevoegen van projecten van studenten aan de Fontys website, promotieposters & Photoshop-sjablonen maken en LinkedIn-berichten schrijven. Ik heb ook veel geleerd over werken met content management systemen."
             stakeholder="Fontys Engineering"
           />
           <UiProject
@@ -138,8 +134,7 @@
             image-name="samu"
             project-name="Mediacommissie"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            Ik studeer ICT aan Fontys Hogescholen en ben lid van Salve Mundi (de studieverenging). Sinds juni 2021 werk ik vrijwillig in de mediacommissie en ben sinds januari 2022 een jaar lang commissieleider geweest. Ik ontwerp promotiemateriaal, beheer Instagram en heb de website herontworpen."
             stakeholder="Salve Mundi"
           />
         </div>
