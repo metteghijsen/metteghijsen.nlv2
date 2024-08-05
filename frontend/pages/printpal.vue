@@ -4,7 +4,7 @@
       :class="[darkModeClass, 'gradient-background-light']"
       class="select-none"
     >
-      <UiProjectHeader header-text="Printpal" description-text="De app om mensen met depressie te ondersteunen." />
+      <UiProjectHeader header-text="Printpal" description-text="De app om mensen met depressie te ondersteunen." image-name="printpal" />
       <UiTextbox
         id="firstarticle"
         title-text="Een manier om over je gevoelens te praten"
