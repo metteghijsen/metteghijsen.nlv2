@@ -4,7 +4,7 @@
       src="/img/projects/printpal.png"
       class="w-full h-screen bg-center bg-no-repeat object-cover object-center z-0 brightness-50"
     />
-    <div class="absolute z-10 top-[350px] text-center">
+    <div class="absolute z-10 bottom-[40%] text-center">
       <UiTypography v-motion-slide-bottom type="h1" size="headinghuge" class="text-white100">
         {{ headerText }}
       </UiTypography>
@@ -12,7 +12,7 @@
         {{ descriptionText }}
       </UiTypography>
     </div>
-    <a href="#firstarticle" class="absolute bottom-[200px]">
+    <a href="#firstarticle" class="absolute bottom-[15%]">
       <span class="sr-only">Navigate to first article</span>
       <ArrowDown class="h-6 w-6 animate-bounce" color="white" />
     </a>
