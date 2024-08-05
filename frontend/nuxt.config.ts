@@ -92,7 +92,7 @@ export default defineNuxtConfig({
           'font-src': ["'self'", 'https:', 'data:'],
           'form-action': ["'self'"],
           'frame-ancestors': ["'self'"],
-          'img-src': ["'self'", 'data:', 'https://s6.metteghijsen.nl/img/deliverables/'],
+          'img-src': ["'self'", 'data:'],
           'object-src': ["'none'"],
           'script-src-attr': ["'none'"],
           'style-src': ["'self'", 'https:', "'unsafe-inline'"],
