@@ -27,49 +27,62 @@ export default defineComponent({
 })
 </script>
 
-    <style>
-      .font-primary{
-        @apply font-poppins font-bold
-      }
+<style>
+  .font-primary {
+    @apply font-poppins font-bold;
+  }
 
-      .font-button{
-        @apply font-poppins font-bold uppercase
-      }
+  .font-button {
+    @apply font-poppins font-bold uppercase;
+  }
 
-      /* Headings */
+  /* Headings */
+  .headinghuge {
+    font-size: clamp(2rem, 6vw, 6.875rem); /* Responsive scaling */
+    line-height: clamp(2.5rem, 7vw, 9.375rem);
+    @apply font-primary;
+  }
 
-      .headinghuge{
-        @apply font-primary md:text-[110px] text-[70px] md:leading-[150px] leading-[120px]
-      }
+  .heading1 {
+    font-size: clamp(1.5rem, 5vw, 3.75rem); /* Responsive scaling */
+    line-height: clamp(2rem, 5.5vw, 4rem);
+    @apply font-primary;
+  }
 
-      .heading1{
-        @apply font-primary md:text-[60px] text-[46px] leading-[64px]
-      }
+  .heading2 {
+    font-size: clamp(1.25rem, 4vw, 2.5rem);
+    line-height: clamp(1.75rem, 5vw, 3rem);
+    @apply font-primary;
+  }
 
-      .heading2{
-        @apply font-primary md:text-[40px] text-[30px] leading-[44px]
-      }
+  .heading3 {
+    font-size: clamp(1rem, 3vw, 2.125rem);
+    line-height: clamp(1.5rem, 4vw, 2.75rem);
+    @apply font-primary;
+  }
 
-      .heading3{
-        @apply font-primary md:text-[34px] text-[26px] leading-[38px]
-      }
+  .heading4 {
+    font-size: clamp(0.875rem, 2.5vw, 1.5rem);
+    line-height: clamp(1.25rem, 3vw, 2rem);
+    @apply font-primary;
+  }
 
-      .heading4{
-        @apply font-primary md:text-[24px] text-[18px] leading-[28px]
-      }
+  /* Paragraphs */
+  .paragraph {
+    font-size: clamp(1rem, 4vw, 1.5rem); /* Responsive scaling */
+    line-height: clamp(1.5rem, 5vw, 2rem);
+    @apply font-montserrat;
+  }
 
-      /* Paragraphs */
+  .paragraph-small {
+    font-size: clamp(1rem, 4vw, 1.25rem); /* Responsive scaling */
+    line-height: clamp(1.5rem, 5vw, 1.5rem);
+    @apply font-poppins;
+  }
 
-      .paragraph{
-        @apply font-montserrat md:text-[24px] text-[18px] leading-[28px]
-      }
-
-      .paragraph-small{
-        @apply font-poppins md:text-[20px] text-[16px] leading-[24px]
-      }
-
-      .paragraph-extra-small{
-        @apply font-poppins lg:text-[20px] md:text-[16px] text-[12px] leading-[20px] lg:leading-[24px]
-      }
-
-    </style>
+  .paragraph-extra-small {
+    font-size: clamp(0.75rem, 3vw, 1rem); /* Responsive scaling */
+    line-height: clamp(1rem, 4vw, 1.25rem);
+    @apply font-poppins;
+  }
+</style>
