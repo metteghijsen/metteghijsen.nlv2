@@ -7,7 +7,7 @@
       <div class="lg:max-w-[1400px] md:max-w-[800px] max-w-[600px] lg:px-[300px] px-7">
         <div class="mt-7 cursor-default lg:text-[70px] md:text-[45px] text-[30px] poppins whitespace-nowrap text-black dark:text-white">
           <h1 v-motion-slide-bottom class="dark:custom-hover-darkmode transition-all ease-in-out">
-            I'm a webdeveloper, <br> building things <br> on the internet.
+            I'm a web developer, <br> building things <br> on the internet.
           </h1>
         </div>
         <UiTypography v-motion-slide-bottom type="p" size="paragraph-small" class="text-left py-3">
@@ -114,6 +114,24 @@
 
           <UiProject
             to="/"
+            image-name="gripopgeluid"
+            project-name="Grip op Geluid"
+            project-description="
+Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht te krijgen in het geluidsniveau in gymzalen. Door real-time geluidsmetingen biedt de app een gebruiksvriendelijke manier om gehoorschade en stress te voorkomen, en zo een veiligere en comfortabelere werkomgeving te creëren."
+            stakeholder="Fontys Lectoraat"
+          />
+
+          <!-- <UiProject
+            to="/"
+            image-name=""
+            project-name="El Studio"
+            project-description="
+            Printpal is een app die mensen met depressie helpt door positieve berichten naar een pocketprinter te sturen. Gebruikers kunnen prints versturen en ontvangen, en chatten met anderen. Ik ontwikkelde deze app met mijn projectgroep in mijn tweede jaar ICT & Media Design voor een wedstrijd van Sogeti."
+            stakeholder="El Studio"
+          /> -->
+
+          <!-- <UiProject
+            to="/"
             image-name="nore"
             project-name="Nore"
             project-description="
@@ -136,7 +154,7 @@
             project-description="
             Ik studeer ICT aan Fontys Hogescholen en ben lid van Salve Mundi (de studieverenging). Sinds juni 2021 werk ik vrijwillig in de mediacommissie en ben sinds januari 2022 een jaar lang commissieleider geweest. Ik ontwerp promotiemateriaal, beheer Instagram en heb de website herontworpen."
             stakeholder="Salve Mundi"
-          />
+          /> -->
         </div>
         <div>
           <div
@@ -152,7 +170,7 @@
                   ref="semesterCounter"
                   :start-amount="0"
                   separator=""
-                  :end-amount="6"
+                  :end-amount="7"
                   :duration="1.5"
                   :autoinit="false"
                 />
@@ -170,7 +188,7 @@
                   ref="projectCounter"
                   :start-amount="0"
                   separator=""
-                  :end-amount="38"
+                  :end-amount="39"
                   :duration="1.5"
                   :autoinit="false"
                 />
@@ -241,7 +259,7 @@ export default {
     handleScroll () {
       const scrollY = window.scrollY
 
-      if (scrollY >= 3500 && this.finishedCounting === false) {
+      if (scrollY >= 3000 && this.finishedCounting === false) {
         this.finishedCounting = true
         this.start()
       }
