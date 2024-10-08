@@ -5,7 +5,7 @@
       class="pt-14 pb-10 flex flex-col items-start justify-center min-h-[100vh]"
     >
       <div class="lg:max-w-[1400px] md:max-w-[800px] max-w-[600px] lg:px-[300px] px-7">
-        <div class="mt-7 cursor-default lg:text-[70px] md:text-[45px] text-[30px] poppins whitespace-nowrap text-black dark:text-white">
+        <div class="mt-7 cursor-default lg:text-[70px] md:text-[45px] text-[25px] poppins whitespace-nowrap text-black dark:text-white">
           <h1 v-motion-slide-bottom class="dark:custom-hover-darkmode transition-all ease-in-out">
             I'm a web developer, <br> building things <br> on the internet.
           </h1>
@@ -35,9 +35,9 @@
         </div>
 
         <div id="about" v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
-          <NuxtImg src="/img/mette.png" alt="mette" class="rounded-3xl lg:w-1/3 md:w-1/3 w-2/3 mr-4 object-cover" />
-          <div class="p-7 w-full">
-            <UiTypography type="p" size="paragraph-extra-small" class="pb-3">
+          <NuxtImg src="/img/mette.png" alt="mette" class="rounded-3xl md:w-1/3 w-full mr-4 object-cover" />
+          <div class="pt-7 md:p-7 w-full">
+            <UiTypography type="p" size="paragraph-extra-small" class="pb-2">
               Ik ben Mette, {{ age }} jaar oud en ik kom uit Eindhoven 🇳🇱. Ik ben een front-end developer en
               UX-designer. Welkom op mijn portfolio website!
               <br><br>
@@ -59,7 +59,7 @@
             </UiTypography>
           </div>
         </div>
-        <div v-motion-slide-visible-once-bottom class="w-full lg:flex lg:flex-row grid grid-cols-5 gap-2">
+        <div v-motion-slide-visible-once-bottom class="w-full lg:flex lg:flex-row grid grid-cols-5">
           <UiLogoCompetence class="dark:flex hidden" image-name="htmldark" skill-name="HTML" skill-link="https://www.w3.org/html/" />
           <UiLogoCompetence class="dark:flex hidden" image-name="cssdark" skill-name="CSS" skill-link="https://www.w3.org/Style/CSS/Overview.en.html" />
           <UiLogoCompetence image-name="tailwind" skill-name="Tailwind CSS" skill-link="https://tailwindcss.com/" />
@@ -75,7 +75,7 @@
     </div>
     <UiContainer gradient>
       <LayoutNavbar />
-      <div id="cases">
+      <div id="cases" class="zoom-80">
         <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5 pt-10">
           <UiProject
             to="onderwegapp"
@@ -87,7 +87,7 @@
           <UiProject
             to="warnermusicfollowmodule"
             image-name="warnermusicfollowmodule"
-            project-name="Warner Music Follow Module"
+            project-name="Follow Module"
             project-description="
             Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen. Gemaakt met Nuxt en Figma.
 "
@@ -154,10 +154,10 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
             stakeholder="Salve Mundi"
           /> -->
         </div>
-        <div>
+        <div class="py-8">
           <div
             v-motion-slide-visible-once-bottom
-            class="md:grid md:grid-cols-3 md:gap-3 mt-8 bg-white dark:bg-[#020520] py-7 rounded-3xl overflow-none"
+            class="md:grid md:grid-cols-3 md:gap-3 bg-white dark:bg-[#020520] py-7 rounded-3xl overflow-none"
           >
             <div class="mb-4 md:mb-0 text-center">
               <UiTypography class="mb-1">
