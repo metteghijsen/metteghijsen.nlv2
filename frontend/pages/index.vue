@@ -83,7 +83,7 @@
             to="/onderwegapp"
             image-name="onderwegapp"
             project-name="Onderwegapp"
-            project-description="De gebruiker geeft een startstation en eindstation aan. Spotify zal een afspeellijst voor je gaan genereren met dezelfde lengte als de rit die je zal gaan maken. Er wordt gebruik gemaakt van de Spotify API zodat de afspeellijst muziek bevat die overeenkomt met de luisteractiviteit van de gebruiker. "
+            project-description="De gebruiker geeft een startstation en eindstation aan. Spotify zal een afspeellijst voor je gaan genereren met dezelfde lengte als de rit die je zal gaan maken. Er wordt gebruik gemaakt van de Spotify API zodat de afspeellijst muziek bevat die overeenkomt met de luisteractiviteit van de gebruiker. Gemaakt met Nuxt en Figma. "
             stakeholder="Warner Music, 9292"
           />
           <UiProject
@@ -91,7 +91,7 @@
             image-name="warnermusicfollowmodule"
             project-name="Warner Music Follow Module"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
+            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen. Gemaakt met Nuxt en Figma.
 "
             stakeholder="Warner Music"
           />
@@ -100,7 +100,7 @@
             image-name="werkenbijpartou"
             project-name="Werken Bij Partou"
             project-description="
-            Tijdens mijn stage bij LiveWall heb ik meegewerkt aan de website voor werkenbijpartou. Ik heb Vue-componenten samengesteld met behulp van Tailwind. Werken aan deze site heeft mij ongelofelijk veel bijgebracht over samenwerken in repositories, nette code schrijven, en elkaars code lezen en begrijpen."
+            Tijdens mijn stage bij LiveWall heb ik meegewerkt aan de website voor werkenbijpartou. Ik heb Vue-componenten samengesteld met behulp van Tailwind. Werken aan deze site heeft mij ongelofelijk veel bijgebracht over samenwerken in repositories, nette code schrijven, en elkaars code lezen en begrijpen. Gemaakt met Nuxt."
             stakeholder="Partou"
           />
           <UiProject
@@ -108,12 +108,12 @@
             image-name="printpal"
             project-name="Printpal"
             project-description="
-            Printpal is een app die mensen met depressie helpt door positieve berichten naar een pocketprinter te sturen. Gebruikers kunnen prints versturen en ontvangen, en chatten met anderen. Ik ontwikkelde deze app met mijn projectgroep in mijn tweede jaar ICT & Media Design voor een wedstrijd van Sogeti."
+            Printpal is een app die mensen met depressie helpt door positieve berichten naar een pocketprinter te sturen. Gebruikers kunnen prints versturen en ontvangen, en chatten met anderen. Ik ontwikkelde deze app met mijn projectgroep in mijn tweede jaar ICT & Media Design voor een wedstrijd van Sogeti. Gemaakt in vanilla."
             stakeholder="Sogeti"
           />
 
           <UiProject
-            to="/"
+            to="gripopgeluid"
             image-name="gripopgeluid"
             project-name="Grip op Geluid"
             project-description="
