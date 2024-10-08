@@ -28,8 +28,8 @@
       <UiContainer>
         <LayoutNavbar />
         <div class="flex justify-center flex-wrap md:gap-4 gap-1 md:py-10 py-5">
-          <UiProjectButton project-title="OnderwegApp" project-link="onderwegapp" is-previous-project />
-          <UiProjectButton project-title="Werken Bij Partou" project-link="werkenbijpartou" />
+          <UiProjectButton project-title="OnderwegApp" project-link="/onderwegapp" is-previous-project />
+          <UiProjectButton project-title="Werken Bij Partou" project-link="/werkenbijpartou" />
         </div>
       </UiContainer>
       <SectionsFooter />
