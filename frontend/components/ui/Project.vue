@@ -1,9 +1,9 @@
 <template>
   <NuxtLink :to="to">
-    <div class="movingBackground background z-0 xl:h-[750px] lg:h-[720px] lg:max-w-[720px] md:max-w-[680px] w-full flex items-center justify-center rounded-3xl md:my-0 my-1">
-      <div class="bg-white100 dark:bg-[#020520] dark:border-slate-600 border-2 flex flex-col items-center rounded-3xl dark:hover:border-blue100 hover:border-blue100 transition-all ease-in-out xl:h-[746px] lg:h-[696px] w-full md:max-w-[676px] lg:w-[calc(100%-4px)]">
+    <div class="movingBackground background z-0 lg:h-[646px] lg:max-w-[720px] md:max-w-[680px] w-full flex items-center justify-center rounded-3xl md:my-0 my-1">
+      <div class="bg-white100 dark:bg-[#020520] dark:border-slate-600 border-2 flex flex-col items-center rounded-3xl dark:hover:border-blue100 hover:border-blue100 transition-all ease-in-out lg:h-[650px] w-full md:max-w-[676px] lg:w-[calc(100%-4px)]">
         <NuxtImg :src="`/img/projects/${imageName}.png`" :alt="imageName" class="object-cover aspect-video w-full max-h-[400px] mb-4 rounded-t-3xl" />
-        <div class="flex flex-col relative mx-10 h-full">
+        <div class="flex flex-col relative px-6 h-full">
           <UiTypography type="p" size="paragraph-extra-small" class="uppercase opacity-70 pb-1 font-semibold">
             {{ stakeholder }}
           </UiTypography>

@@ -37,7 +37,7 @@
         <div v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
           <NuxtImg src="/img/mette.png" alt="mette" class="rounded-3xl md:w-1/3 w-full mr-4 object-cover" />
           <div class="pt-7 md:p-7 w-full">
-            <UiTypography type="p" size="paragraph-extra-small" class="pb-2">
+            <UiTypography type="p" size="paragraph-small" class="pb-2">
               Ik ben Mette, {{ age }} jaar oud en ik kom uit Eindhoven 🇳🇱. Ik ben een front-end developer en
               UX-designer. Welkom op mijn portfolio website!
               <br><br>
@@ -75,8 +75,8 @@
     </div>
     <UiContainer gradient>
       <LayoutNavbar />
-      <div id="cases" class="zoom-80">
-        <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5 pt-10">
+      <div id="cases">
+        <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-3 grid-cols-1 gap-0.5 pt-10">
           <UiProject
             to="onderwegapp"
             image-name="onderwegapp"
