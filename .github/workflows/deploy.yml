@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main
+      - develop
 
 jobs:
-  web-deploy:
-    name: Deploy
+  web-deploy-main:
+    if: github.ref == 'refs/heads/main'
+    name: Deploy to Production
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -20,7 +22,7 @@ jobs:
         working-directory: ./frontend
         run: npx nuxi generate -y
 
-      - name: FTP the output
+      - name: FTP the output to production
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.metteghijsen.nl
@@ -29,3 +31,28 @@ jobs:
           local-dir: ./frontend/dist/
           server-dir: ./metteghijsen.nl/
           dry-run: true
+
+  web-deploy-develop:
+    if: github.ref == 'refs/heads/develop'
+    name: Deploy to Development
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+      - name: Installing project dependencies
+        working-directory: ./frontend
+        run: npm install
+
+      - name: Building the project
+        working-directory: ./frontend
+        run: npx nuxi generate -y
+
+      - name: FTP the output to development
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.metteghijsen.nl
+          username: metteftp@metteghijsen.nl
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./frontend/dist/
+          server-dir: ./dev.metteghijsen.nl/
+          dry-run: false
