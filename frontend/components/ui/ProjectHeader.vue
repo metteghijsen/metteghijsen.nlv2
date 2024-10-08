@@ -5,7 +5,7 @@
       <UiTypography v-motion-slide-bottom type="h1" size="headinghuge" class="text-white100">
         {{ headerText }}
       </UiTypography>
-      <UiTypography v-motion-slide-bottom type="p" size="paragraph-small" class="text-white100">
+      <UiTypography v-motion-slide-bottom type="p" size="paragraph-small" class="text-white100 pt-2">
         {{ descriptionText }}
       </UiTypography>
     </div>
