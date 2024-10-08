@@ -23,7 +23,7 @@
           Contacteer me dan vooral via email of sociale media. Spreek je daar!
         </UiTypography>
         <UiTypography type="p" size="paragraph-extra-small" class="mt-12">
-          Mette Ghijsen © 2021 - {{ currentYear }}
+          Mette Ghijsen © 2021 - {{ currentYear }} • Update 2.1
         </UiTypography>
       </div>
       <div>
