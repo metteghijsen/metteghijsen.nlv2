@@ -60,18 +60,16 @@
           </div>
         </div>
         <div v-motion-slide-visible-once-bottom class="w-full lg:flex lg:flex-row grid grid-cols-5 gap-2">
-          <UiLogoCompetence class="dark:hidden flex" image-name="html" />
-          <UiLogoCompetence class="dark:hidden flex" image-name="css" />
-          <UiLogoCompetence class="dark:flex hidden" image-name="htmldark" />
-          <UiLogoCompetence class="dark:flex hidden" image-name="cssdark" />
-          <UiLogoCompetence image-name="tailwind" />
-          <UiLogoCompetence image-name="sass" />
-          <UiLogoCompetence image-name="javascript" />
-          <UiLogoCompetence image-name="typescript" />
-          <UiLogoCompetence image-name="vue" />
-          <UiLogoCompetence image-name="nuxt" />
-          <UiLogoCompetence image-name="photoshop" />
-          <UiLogoCompetence image-name="figma" />
+          <UiLogoCompetence class="dark:flex hidden" image-name="htmldark" skill-name="HTML" skill-link="https://www.w3.org/html/" />
+          <UiLogoCompetence class="dark:flex hidden" image-name="cssdark" skill-name="CSS" skill-link="https://www.w3.org/Style/CSS/Overview.en.html" />
+          <UiLogoCompetence image-name="tailwind" skill-name="Tailwind CSS" skill-link="https://tailwindcss.com/" />
+          <UiLogoCompetence image-name="sass" skill-name="Sass" skill-link="https://sass-lang.com/" />
+          <UiLogoCompetence image-name="javascript" skill-name="JavaScript" skill-link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+          <UiLogoCompetence image-name="typescript" skill-name="TypeScript" skill-link="https://www.typescriptlang.org/" />
+          <UiLogoCompetence image-name="vue" skill-name="Vue.js" skill-link="https://vuejs.org/" />
+          <UiLogoCompetence image-name="nuxt" skill-name="Nuxt.js" skill-link="https://nuxt.com/" />
+          <UiLogoCompetence image-name="photoshop" skill-name="Adobe Photoshop" skill-link="https://www.adobe.com/products/photoshop.html" />
+          <UiLogoCompetence image-name="figma" skill-name="Figma" skill-link="https://www.figma.com/" />
         </div>
       </div>
     </div>
@@ -80,14 +78,14 @@
       <div id="cases">
         <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5 pt-10">
           <UiProject
-            to="/onderwegapp"
+            to="onderwegapp"
             image-name="onderwegapp"
             project-name="Onderwegapp"
             project-description="De gebruiker geeft een startstation en eindstation aan. Spotify zal een afspeellijst voor je gaan genereren met dezelfde lengte als de rit die je zal gaan maken. Er wordt gebruik gemaakt van de Spotify API zodat de afspeellijst muziek bevat die overeenkomt met de luisteractiviteit van de gebruiker. Gemaakt met Nuxt en Figma. "
             stakeholder="Warner Music, 9292"
           />
           <UiProject
-            to="/"
+            to="warnermusicfollowmodule"
             image-name="warnermusicfollowmodule"
             project-name="Warner Music Follow Module"
             project-description="
@@ -96,7 +94,7 @@
             stakeholder="Warner Music"
           />
           <UiProject
-            to="/"
+            to="werkenbijpartou"
             image-name="werkenbijpartou"
             project-name="Werken Bij Partou"
             project-description="
