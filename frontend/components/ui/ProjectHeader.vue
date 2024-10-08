@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex justify-center cursor-default">
     <NuxtImg :src="`/img/projects/${imageName}.png`" :alt="imageName" class="w-full h-screen bg-center bg-no-repeat object-cover object-center z-0 brightness-[35%]" />
-    <div class="absolute z-10 bottom-[40%] text-center px-4"> <!-- Added padding for small screens -->
+    <div class="absolute z-10 bottom-[40%] text-center px-4">
       <UiTypography v-motion-slide-bottom type="h1" size="headinghuge" class="text-white100">
         {{ headerText }}
       </UiTypography>
