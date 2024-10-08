@@ -1,7 +1,7 @@
 <template>
   <div :class="[darkModeClass, 'gradient-background-light']">
     <div class="flex justify-center">
-      <div class="w-full bg-white100 dark:bg-[#020520] grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 gap-2 lg:px-[400px] px-[200px] py-[120px] flex justify-center">
+      <div class="w-full bg-white100 dark:bg-[#020520] grid grid-cols-4 gap-2 lg:px-[400px] md:px-[200px] md:py-[120px] px-8 py-8 justify-center">
         <UiLogo image-name="fontys" invert to="https://www.fontys.nl/Home.htm" />
         <UiLogo image-name="kea" invert keep-inverted="" to="https://kea.dk/en/" />
         <UiLogo image-name="livewall" invert keep-inverted to="https://www.livewall.nl/" />
@@ -23,7 +23,7 @@
           Contacteer me dan vooral via email of sociale media. Spreek je daar!
         </UiTypography>
         <UiTypography type="p" size="paragraph-extra-small" class="mt-12">
-          Mette Ghijsen © 2021- {{ currentYear }}
+          Mette Ghijsen © 2021 - {{ currentYear }}
         </UiTypography>
       </div>
       <div>
