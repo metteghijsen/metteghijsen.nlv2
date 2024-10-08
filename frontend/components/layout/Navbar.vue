@@ -136,8 +136,8 @@ watch(isDarkMode, (newVal) => {
 })
 
 const links = [
-  { text: 'About', to: '#about' },
-  { text: 'Cases', to: '#cases' },
+  { text: 'About', to: '/#about' },
+  { text: 'Cases', to: '/#cases' },
   { text: 'Contact', to: '#contact' }
 ]
 

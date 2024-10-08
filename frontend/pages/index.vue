@@ -22,7 +22,7 @@
       </div> -->
       </div>
     </div>
-    <div class="bg-white dark:bg-[#020520] cursor-default flex justify-center py-10 border-y-slate-200 dark:border-y-slate-600 border-y-[1px]">
+    <div id="about" class="bg-white dark:bg-[#020520] cursor-default flex justify-center py-10 border-y-slate-200 dark:border-y-slate-600 border-y-[1px]">
       <div v-motion-slide-visible-once-bottom class="lg:max-w-[1400px] md:max-w-[800px] max-w-[600px] px-6">
         <div class="title-outline dark:title-outline-darkmode poppins lg:text-[70px] md:text-[45px] text-[30px] leading-[44px]">
           <h1>nice to meet you!</h1>
@@ -34,7 +34,7 @@
           <h1>nice to meet you!</h1>
         </div>
 
-        <div id="about" v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
+        <div v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
           <NuxtImg src="/img/mette.png" alt="mette" class="rounded-3xl md:w-1/3 w-full mr-4 object-cover" />
           <div class="pt-7 md:p-7 w-full">
             <UiTypography type="p" size="paragraph-extra-small" class="pb-2">

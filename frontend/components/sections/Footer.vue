@@ -1,5 +1,5 @@
 <template>
-  <div :class="[darkModeClass, 'gradient-background-light']">
+  <div id="contact" :class="[darkModeClass, 'gradient-background-light']">
     <div class="flex justify-center">
       <div class="w-full bg-white100 dark:bg-[#020520] grid grid-cols-4 gap-2 lg:px-[400px] md:px-[200px] md:py-[120px] px-8 py-8 justify-center">
         <UiLogo image-name="fontys" invert to="https://www.fontys.nl/Home.htm" />
