@@ -12,6 +12,13 @@
         Printpal is een applicatie die mensen met depressie ondersteunt door positieve berichten naar een pocketprinter te sturen. Binnen de app krijg je de mogelijkheid om prints naar je vrienden en willekeurige mensen te sturen. Je kunt ook kiezen welke soort prints je wilt ontvangen en op welk tijdstip. Als je niet in de buurt van je printer bent, bijvoorbeeld omdat je reist en hem niet hebt meegenomen, biedt de app je de mogelijkheid om deze prints overal en altijd te bekijken! Je kunt ook chatten met de mensen die hebben gekozen om een reactie op hun prints te ontvangen. Op deze manier kun je samen praten over gevoelige onderwerpen en een kijkje nemen in de gedachten van iemand die hetzelfde doormaakt als jij. Hiermee hopen we mensen aan te moedigen om het gesprek aan te gaan en nieuwe vrienden te maken.
         <br><br>
         Ik heb deze app samen met mijn projectgroep gemaakt in het tweede jaar van mijn studie ICT & Media Design (2022). We deden mee aan de ProjectB-competitie van het bedrijf Sogeti. De opdracht van de competitie was: Creëer een IT-innovatie voor mensen met een (mentale) aandoening of chronische ziekte. Ik heb dit idee samen met een mede-groepslid gepresenteerd voor 120 mensen. Helaas hebben we niets gewonnen.
+        <div class="flex flex-wrap md:flex-row md:gap-2 gap-1 pt-5">
+          <UiProjectProperty property-text="Mobile" />
+          <UiProjectProperty property-text="Vanilla" />
+          <UiProjectProperty property-text="Branding" />
+          <UiProjectProperty property-text="Design" />
+          <UiProjectProperty property-text="Figma" />
+        </div>
       </UiTextbox>
       <NuxtImg v-motion-slide-visible-once-bottom src="/img/projectimage3.png" class="w-full" />
 
@@ -48,6 +55,10 @@
       <NuxtImg src="/img/projectimage4.png" class="w-full" />
       <UiContainer>
         <LayoutNavbar />
+        <div class="flex justify-center flex-wrap md:gap-4 gap-1 md:py-10 py-5">
+          <UiProjectButton project-title="Werken bij Partou" project-link="werkenbijpartou" is-previous-project />
+          <UiProjectButton project-title="Grip op Geluid" project-link="gripopgeluid" />
+        </div>
       </UiContainer>
       <SectionsFooter />
     </div>
