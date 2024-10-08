@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./frontend/dist/
           server-dir: ./metteghijsen.nl/
-          dry-run: true
+          dry-run: false
 
   web-deploy-develop:
     if: github.ref == 'refs/heads/develop'
