@@ -23,7 +23,7 @@
       <NuxtImg v-motion-slide-visible-once-bottom src="/img/projectimage3.png" class="w-full" />
 
       <UiTextbox
-        title-text="branding kleuren & typografie"
+        title-text="Branding kleuren & typografie"
       >
         Omdat we werken met een vrij kwetsbare doelgroep, willen we ervoor zorgen dat mensen niets negatiefs aan onze app overhouden. Dit hebben we geprobeerd toe te passen in ons ontwerp. Zo hebben we bijvoorbeeld gelet op ons kleur- en lettertypegebruik.
         <br><br>
@@ -33,7 +33,7 @@
       </UiTextbox>
       <NuxtImg v-motion-slide-visible-once-bottom src="/img/projectimage2.png" class="w-full min-h-[500px] object-contain lg:py-14 py-3 px-4 xl:px-[350px]" />
       <UiTextbox
-        title-text="gebruikerstesten inchecken met gebruikers"
+        title-text="Gebruikerstesten / inchecken met gebruikers"
       >
         Voordat we de UI hadden die we nu hebben, hebben we ook verschillende rondes getest met gebruikers die binnen onze doelgroep vallen. Hiervoor gebruikten we het platform Maze. We stelden van tevoren een aantal scenario's op die de gebruikers moesten doorlopen. Bijvoorbeeld, "Maak een account aan", "Voeg een vriend toe" of "Verander je wachtwoord". Zo konden we zien of de UI logisch leek voor de gebruikers. Van Maze kregen we altijd heatmaps van waar gebruikers het meest klikten, en percentages van hoeveel gebruikers ons geselecteerde pad volgden en hoeveel afweken. De combinatie van al deze gegevens en de feedback die we ontvingen gaf ons een overzicht van de beste manier om onze elementen te positioneren zodat het logisch was voor de gebruikers.
         <br>
@@ -44,7 +44,7 @@
         <NuxtImg v-motion-slide-visible-once-bottom src="/img/projectimage1.png" class="w-full pt-4" />
       </UiTextbox>
       <UiTextbox
-        title-text="het prototype bouwen"
+        title-text="Prototype ontwikkelen"
       >
         Nadat we onze gebruikersinterface hadden getest, was het tijd om deze na het eerste ontwerp te gaan bouwen. Ons plan was om dit te doen via een PWA (Progressive Web App). Dit is een applicatie die je via je browser op zowel je smartphone als desktop kunt installeren. Het grote voordeel hiervan is dat je de app overal kunt gebruiken.
 

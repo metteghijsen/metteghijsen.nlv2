@@ -6,7 +6,7 @@
         description-text="Stel jouw ultieme reisafspeellijst samen met de Onderwegapp van 9292."
         image-name="onderwegapp"
       />
-      <UiTextbox id="firstarticle" title-text="stel een afspeellijst samen voor onderweg">
+      <UiTextbox id="firstarticle" title-text="Stel een afspeellijst samen voor onderweg">
         De OnderwegApp is een applicatie die je kunt gebruiken vanuit de 9292 app bij het plannen van je reis. Vul in de
         9292 app je start- en eindstation in. Druk vervolgens op de paarse knop "Een afspeellijst voor onderweg" en je
         wordt doorgestuurd naar de website van de OnderwegApp. Hier kun je inloggen met je Spotify-account. De
@@ -28,7 +28,7 @@
       </UiTextbox>
       <NuxtImg v-motion-slide-visible-once-bottom src="/img/onderwegapp/onderwegappmockup.jpg" class="w-full" />
 
-      <UiTextbox title-text="branding kleuren & typografie">
+      <UiTextbox title-text="Branding kleuren & typografie">
         Voor de OnderwegApp heb ik een styleguide gemaakt met Adobe XD. Deze guide zorgt ervoor dat het ontwerp en de
         gebruikerservaring consistent blijven. LiveWall wilde dat de nieuwe versie niet te veel zou afwijken van de
         oude, dus ik heb ervoor gezorgd dat het bestaande ontwerp de basis bleef. Alle standaardstijlen zijn in de
@@ -37,7 +37,7 @@
         toch op een consistente manier kunnen werken.
         <NuxtImg v-motion-slide-visible-once-bottom src="/img/onderwegapp/brandguideonderwegapp.jpg" class="w-full pt-4" />
       </UiTextbox>
-      <UiTextbox title-text="het nieuwe design">
+      <UiTextbox title-text="Het nieuwe design">
         Voor het ontwerp van de nieuwe functies in de OnderwegApp heb ik Figma gebruikt, met de styleguide die ik eerder
         had gemaakt als referentie. Op basis van feedback uit gebruikerstesten en mijn eigen onderzoek heb ik
         verbeteringen doorgevoerd. Zo heb ik de belangrijkste info, zoals veelgestelde vragen, hoger op de homepagina
@@ -49,7 +49,7 @@
         <NuxtImg v-motion-slide-visible-once-bottom src="/img/onderwegapp/onderwegappfigma.jpg" class="w-full pt-4" />
       </UiTextbox>
       <NuxtImg v-motion-slide-visible-once-bottom src="/img/onderwegapp/projectimage5.png" class="w-full" />
-      <UiTextbox title-text="testen met de gebruiker">
+      <UiTextbox title-text="Testen met de gebruiker">
         Om te testen of de nieuwe versie van de OnderwegApp gebruiksvriendelijker is geworden, heb ik opnieuw
         gebruikerstests uitgevoerd. Dit keer heb ik mensen gevraagd die ook al hadden meegeholpen bij het testen van
         versie 1, maar ook nieuwe gebruikers die de app nog niet kenden. Zo kon ik zowel zien of de verbeteringen
