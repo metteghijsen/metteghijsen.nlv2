@@ -62,8 +62,8 @@ export default defineComponent({
   }
 
   .heading4 {
-    font-size: clamp(14px, 2.5vw, 24px);
-    line-height: clamp(20px, 3vw, 32px);
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: clamp(20px, 3vw, 28px);
     @apply font-primary;
   }
 
