@@ -14,7 +14,8 @@
         Ik heb deze app samen met mijn projectgroep gemaakt in het tweede jaar van mijn studie ICT & Media Design (2022). We deden mee aan de ProjectB-competitie van het bedrijf Sogeti. De opdracht van de competitie was: Creëer een IT-innovatie voor mensen met een (mentale) aandoening of chronische ziekte. Ik heb dit idee samen met een mede-groepslid gepresenteerd voor 120 mensen. Helaas hebben we niets gewonnen.
         <div class="flex flex-wrap md:flex-row md:gap-2 gap-1 pt-5">
           <UiProjectProperty property-text="Mobile" />
-          <UiProjectProperty property-text="Vanilla" />
+          <UiProjectProperty property-text="HTML/CSS" />
+          <UiProjectProperty property-text="JavaScript" />
           <UiProjectProperty property-text="Branding" />
           <UiProjectProperty property-text="Design" />
           <UiProjectProperty property-text="Figma" />
