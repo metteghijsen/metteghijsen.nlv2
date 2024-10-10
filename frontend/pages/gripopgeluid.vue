@@ -22,8 +22,8 @@
           <UiProjectProperty property-text="Figma" />
         </div>
       </UiTextbox>
-      <NuxtImg v-motion-slide-visible-once-bottom src="/img/gripopgeluid/gripopgeluidbrandguide.png" class="w-full" />
-      <UiTextbox id="firstarticle" title-text="Kleuren, logo en typografie">
+      <NuxtImg src="/img/gripopgeluid/gripopgeluidbrandguide.png" class="w-full" />
+      <UiTextbox title-text="Kleuren, logo en typografie">
         Het maken van de brandguide was een belangrijk onderdeel van het project, dat als werktitel "Noise Control" had. Deze naam hebben we ook gebruikt voor de app. Voor de visuele identiteit heb ik gekozen voor een simpele, professionele stijl met een speels tintje. Het lettertype "Inter" sloot hier perfect op aan, omdat het strak en leesbaar is zonder te veel op te vallen. <br><br> Een belangrijk element in de brandguide was het ontwerp van het logo. We hebben gekozen voor een oor-vormig logo met soundwaves, dat direct verwijst naar het doel van de app: inzicht geven in geluid en de impact ervan. Dit logo sluit goed aan bij de rest van de visuele stijl, die strak en professioneel is, maar toch een speelse uitstraling heeft om de gebruikerservaring licht en toegankelijk te houden. <br><br> De brandguide heb ik volledig in Figma gemaakt en daarna als PDF aangeleverd bij de opdrachtgever. Deze was erg blij met het eindresultaat, en het project wordt nu doorontwikkeld tot een daadwerkelijke app die binnenkort beschikbaar zal zijn in zowel de App Store als de Play Store.
         <NuxtImg v-motion-slide-visible-once-bottom src="/img/gripopgeluid/gripopgeluidoortjes.png" class="w-full mt-3" />
       </UiTextbox>
@@ -32,7 +32,7 @@
         <LayoutNavbar />
         <div class="flex justify-center flex-wrap md:gap-4 gap-1 md:py-10 py-5">
           <UiProjectButton project-title="Printpal" project-link="/printpal" is-previous-project />
-          <UiProjectButton project-title="OnderwegApp" project-link="/onderwegapp" />
+          <UiProjectButton project-title="Salve Mundi" project-link="/salvemundi" />
         </div>
       </UiContainer>
       <SectionsFooter />

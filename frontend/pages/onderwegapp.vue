@@ -49,24 +49,17 @@
         <NuxtImg v-motion-slide-visible-once-bottom src="/img/onderwegapp/onderwegappfigma.jpg" class="w-full pt-4" />
       </UiTextbox>
       <NuxtImg v-motion-slide-visible-once-bottom src="/img/onderwegapp/projectimage5.png" class="w-full" />
-      <UiTextbox title-text="Testen met de gebruiker">
-        Om te testen of de nieuwe versie van de OnderwegApp gebruiksvriendelijker is geworden, heb ik opnieuw
-        gebruikerstests uitgevoerd. Dit keer heb ik mensen gevraagd die ook al hadden meegeholpen bij het testen van
-        versie 1, maar ook nieuwe gebruikers die de app nog niet kenden. Zo kon ik zowel zien of de verbeteringen
-        aansloegen bij bestaande gebruikers als hoe nieuwkomers de app ervoeren.
+      <UiTextbox title-text="De development met Nuxt">
+        Het ontwikkelen van de OnderwegApp was een leuke maar ook uitdagende klus met verschillende ingewikkelde stappen. De app moest functies hebben zoals inloggen, afspeellijsten maken, genres toewijzen en een maximale afspeeltijd instellen. Omdat de Spotify API geen optie biedt om een maximale afspeeltijd toe te voegen, maar alleen een maximaal aantal nummers, heb ik zelf een functie geschreven die het aantal nummers berekent op basis van de reistijd. Deze functie heb ik meerdere keren aangepast totdat deze precies deed wat ik wilde.
         <br><br>
-        Tijdens de tests doorliepen de deelnemers verschillende scenario’s, zoals “Kun je de veelgestelde vragen
-        makkelijk vinden?” en “Maak een afspeellijst op basis van je reistijd.” Deze scenario’s hielpen me te ontdekken
-        of de aanpassingen de app gebruiksvriendelijker hadden gemaakt.
+        Daarnaast moest ik reisgegevens zoals de starttijd, eindtijd en bestemming uit de URL halen en verwerken in de naam en omschrijving van de afspeellijst. Zo was de afspeellijst altijd afgestemd op de reis van de gebruiker. Een lastig onderdeel was het proberen om een afbeelding toe te voegen aan de afspeellijst. Helaas is dit me uiteindelijk niet gelukt, ondanks dat ik er veel tijd in heb gestoken, en veel tijd heb besteed aan het lezen van de documentatie van de Spotify API.
         <br><br>
-        De reacties waren overwegend positief: mensen vonden de interface overzichtelijker en het maken van een
-        afspeellijst ging soepel. Met hun feedback kon ik nog een paar puntjes verbeteren, zodat de app nog prettiger in
-        gebruik werd.
+        Tijdens het ontwikkelen en testen van de Spotify functionaliteit heb ik in totaal 138 afspeellijsten aangemaakt. Het was soms wat puzzelen, maar ik ben blij met hoe de app uiteindelijk geworden is en hoe het hele proces is verlopen.
       </UiTextbox>
       <UiContainer>
         <LayoutNavbar />
         <div class="flex justify-center flex-wrap md:gap-4 gap-1 md:py-10 py-5">
-          <UiProjectButton project-title="Grip op Geluid" project-link="/gripopgeluid" is-previous-project />
+          <UiProjectButton project-title="Salve Mundi" project-link="/salvemundi" is-previous-project />
           <UiProjectButton project-title="Follow Module" project-link="/warnermusicfollowmodule" />
         </div>
       </UiContainer>

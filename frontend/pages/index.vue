@@ -119,6 +119,14 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
             stakeholder="Fontys Lectoraat"
           />
 
+          <UiProject
+            to="salvemundi"
+            image-name="salvemundi"
+            project-name="Mediacommissie"
+            project-description="Sinds juni 2021 ben ik actief lid van de mediacommissie van studievereniging Salve Mundi. Als voorzitter ben ik verantwoordelijk voor het ontwerpen van posters, het beheren van de Instagram-pagina, en het ontwikkelen van merchandise, zoals hoodies voor nieuwe leden. Daarnaast heb ik de website van de vereniging opnieuw vormgegeven."
+            stakeholder="Salve Mundi"
+          />
+
           <!-- <UiProject
             to="/"
             image-name=""
