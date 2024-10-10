@@ -20,6 +20,7 @@
         <div class="flex flex-wrap md:flex-row md:gap-2 gap-1 pt-5">
           <UiProjectProperty property-text="Web" />
           <UiProjectProperty property-text="Nuxt" />
+          <UiProjectProperty property-text="Typescript" />
           <UiProjectProperty property-text="Tailwind" />
           <UiProjectProperty property-text="Design" />
           <UiProjectProperty property-text="Figma" />
