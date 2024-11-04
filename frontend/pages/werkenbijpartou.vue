@@ -31,7 +31,7 @@
       <UiContainer>
         <LayoutNavbar />
         <div class="flex justify-center flex-wrap md:gap-4 gap-1 md:py-10 py-5">
-          <UiProjectButton project-title="Follow Module" project-link="/warnermusicfollowmodule" is-previous-project />
+          <UiProjectButton project-title="OnderwegApp" project-link="/onderwegapp" is-previous-project />
           <UiProjectButton project-title="Printpal" project-link="/printpal" />
         </div>
       </UiContainer>
