@@ -85,15 +85,6 @@
             stakeholder="Warner Music, 9292"
           />
           <UiProject
-            to="warnermusicfollowmodule"
-            image-name="warnermusicfollowmodule"
-            project-name="Follow Module"
-            project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen. Gemaakt met Nuxt en Figma.
-"
-            stakeholder="Warner Music"
-          />
-          <UiProject
             to="werkenbijpartou"
             image-name="werkenbijpartou"
             project-name="Werken Bij Partou"
