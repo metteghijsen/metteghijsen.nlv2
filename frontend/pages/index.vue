@@ -5,9 +5,9 @@
       class="pt-14 pb-10 flex flex-col items-start justify-center min-h-[100vh]"
     >
       <div class="lg:max-w-[1400px] md:max-w-[800px] max-w-[600px] lg:px-[300px] px-7">
-        <div class="mt-7 cursor-default lg:text-[70px] md:text-[45px] text-[30px] poppins whitespace-nowrap text-black dark:text-white">
+        <div class="mt-7 cursor-default lg:text-[70px] md:text-[45px] text-[25px] poppins whitespace-nowrap text-black dark:text-white">
           <h1 v-motion-slide-bottom class="dark:custom-hover-darkmode transition-all ease-in-out">
-            I'm a webdeveloper, <br> building things <br> on the internet.
+            I'm a web developer, <br> building things <br> on the internet.
           </h1>
         </div>
         <UiTypography v-motion-slide-bottom type="p" size="paragraph-small" class="text-left py-3">
@@ -22,7 +22,7 @@
       </div> -->
       </div>
     </div>
-    <div class="bg-white dark:bg-[#020520] cursor-default flex justify-center py-10 border-y-slate-200 dark:border-y-slate-600 border-y-[1px]">
+    <div id="about" class="bg-white dark:bg-[#020520] cursor-default flex justify-center py-10 border-y-slate-200 dark:border-y-slate-600 border-y-[1px]">
       <div v-motion-slide-visible-once-bottom class="lg:max-w-[1400px] md:max-w-[800px] max-w-[600px] px-6">
         <div class="title-outline dark:title-outline-darkmode poppins lg:text-[70px] md:text-[45px] text-[30px] leading-[44px]">
           <h1>nice to meet you!</h1>
@@ -34,10 +34,10 @@
           <h1>nice to meet you!</h1>
         </div>
 
-        <div id="about" v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
-          <NuxtImg src="/img/mette.png" alt="mette" class="rounded-3xl lg:w-1/3 md:w-1/3 w-2/3 mr-4 object-cover" />
-          <div class="p-7 w-full">
-            <UiTypography type="p" size="paragraph-extra-small" class="pb-3">
+        <div v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
+          <NuxtImg src="/img/mette.png" alt="mette" class="rounded-3xl md:w-1/3 w-full mr-4 object-cover" />
+          <div class="pt-7 md:p-7 w-full">
+            <UiTypography type="p" size="paragraph-small" class="pb-2">
               Ik ben Mette, {{ age }} jaar oud en ik kom uit Eindhoven 🇳🇱. Ik ben een front-end developer en
               UX-designer. Welkom op mijn portfolio website!
               <br><br>
@@ -53,55 +53,43 @@
               Salve Mundi. Hier versterk ik de mediacommissie door het maken van promotiemateriaal, en help ik de
               feestcommissie met het organiseren van feestjes. Ik ben ook regelmatig bij Hubble Community Café achter de
               tap te vinden. Daarnaast vind ik het leuk om me bezig te houden met videogames, gitaar spelen, (analoge)
-              fotografie, video-editing en tekenen.
+              fotografie, urbexen, video-editing en tekenen.
               <br><br>
               Voel je vrij om een kijkje te nemen op mijn portfolio website!
             </UiTypography>
           </div>
         </div>
-        <div v-motion-slide-visible-once-bottom class="w-full lg:flex lg:flex-row grid grid-cols-5 gap-2">
-          <UiLogoCompetence class="dark:hidden flex" image-name="html" />
-          <UiLogoCompetence class="dark:hidden flex" image-name="css" />
-          <UiLogoCompetence class="dark:flex hidden" image-name="htmldark" />
-          <UiLogoCompetence class="dark:flex hidden" image-name="cssdark" />
-          <UiLogoCompetence image-name="tailwind" />
-          <UiLogoCompetence image-name="sass" />
-          <UiLogoCompetence image-name="javascript" />
-          <UiLogoCompetence image-name="typescript" />
-          <UiLogoCompetence image-name="vue" />
-          <UiLogoCompetence image-name="nuxt" />
-          <UiLogoCompetence image-name="photoshop" />
-          <UiLogoCompetence image-name="figma" />
+        <div v-motion-slide-visible-once-bottom class="w-full lg:flex lg:flex-row grid grid-cols-5 gap-1">
+          <UiLogoCompetence class="dark:flex hidden" image-name="htmldark" skill-name="HTML" skill-link="https://www.w3.org/html/" />
+          <UiLogoCompetence class="dark:flex hidden" image-name="cssdark" skill-name="CSS" skill-link="https://www.w3.org/Style/CSS/Overview.en.html" />
+          <UiLogoCompetence image-name="tailwind" skill-name="Tailwind CSS" skill-link="https://tailwindcss.com/" />
+          <UiLogoCompetence image-name="sass" skill-name="Sass" skill-link="https://sass-lang.com/" />
+          <UiLogoCompetence image-name="javascript" skill-name="JavaScript" skill-link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+          <UiLogoCompetence image-name="typescript" skill-name="TypeScript" skill-link="https://www.typescriptlang.org/" />
+          <UiLogoCompetence image-name="vue" skill-name="Vue.js" skill-link="https://vuejs.org/" />
+          <UiLogoCompetence image-name="nuxt" skill-name="Nuxt.js" skill-link="https://nuxt.com/" />
+          <UiLogoCompetence image-name="photoshop" skill-name="Adobe Photoshop" skill-link="https://www.adobe.com/products/photoshop.html" />
+          <UiLogoCompetence image-name="figma" skill-name="Figma" skill-link="https://www.figma.com/" />
         </div>
       </div>
     </div>
-    <UiContainer>
+    <UiContainer gradient>
       <LayoutNavbar />
       <div id="cases">
-        <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5">
+        <div v-motion-slide-visible-once-bottom class="grid xl:grid-cols-3 md:grid-cols-2 md:gap-2 grid-cols-1 gap-0.5 pt-10">
           <UiProject
-            to="/"
+            to="onderwegapp"
             image-name="onderwegapp"
             project-name="Onderwegapp"
-            project-description="De gebruiker geeft een startstation en eindstation aan. Spotify zal een afspeellijst voor je gaan genereren met dezelfde lengte als de rit die je zal gaan maken. Er wordt gebruik gemaakt van de Spotify API zodat de afspeellijst muziek bevat die overeenkomt met de luisteractiviteit van de gebruiker. "
+            project-description="De gebruiker geeft een startstation en eindstation aan. Spotify zal een afspeellijst voor je gaan genereren met dezelfde lengte als de rit die je zal gaan maken. Er wordt gebruik gemaakt van de Spotify API zodat de afspeellijst muziek bevat die overeenkomt met de luisteractiviteit van de gebruiker. Gemaakt met Nuxt en Figma. "
             stakeholder="Warner Music, 9292"
           />
           <UiProject
-            to="/"
-            image-name="warnermusicfollowmodule"
-            project-name="Warner Music Follow Module"
-            project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
-            stakeholder="Warner Music"
-          />
-          <UiProject
-            to="/"
+            to="werkenbijpartou"
             image-name="werkenbijpartou"
             project-name="Werken Bij Partou"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            Tijdens mijn stage bij LiveWall heb ik meegewerkt aan de website voor werkenbijpartou. Ik heb Vue-componenten samengesteld met behulp van Tailwind. Werken aan deze site heeft mij ongelofelijk veel bijgebracht over samenwerken in repositories, nette code schrijven, en elkaars code lezen en begrijpen. Gemaakt met Nuxt."
             stakeholder="Partou"
           />
           <UiProject
@@ -109,18 +97,42 @@
             image-name="printpal"
             project-name="Printpal"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            Printpal is een app die mensen met depressie helpt door positieve berichten naar een pocketprinter te sturen. Gebruikers kunnen prints versturen en ontvangen, en chatten met anderen. Ik ontwikkelde deze app met mijn projectgroep in mijn tweede jaar ICT & Media Design voor een wedstrijd van Sogeti. Gemaakt in vanilla."
             stakeholder="Sogeti"
           />
 
           <UiProject
+            to="gripopgeluid"
+            image-name="gripopgeluid"
+            project-name="Grip op Geluid"
+            project-description="
+Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht te krijgen in het geluidsniveau in gymzalen. Door real-time geluidsmetingen biedt de app een gebruiksvriendelijke manier om gehoorschade en stress te voorkomen, en zo een veiligere en comfortabelere werkomgeving te creëren."
+            stakeholder="Fontys Lectoraat"
+          />
+
+          <UiProject
+            to="salvemundi"
+            image-name="salvemundi"
+            project-name="Mediacommissie"
+            project-description="Sinds juni 2021 ben ik actief lid van de mediacommissie van studievereniging Salve Mundi. Als voorzitter ben ik verantwoordelijk voor het ontwerpen van posters, het beheren van de Instagram-pagina, en het ontwikkelen van merchandise, zoals hoodies voor nieuwe leden. Daarnaast heb ik de website van de vereniging opnieuw vormgegeven."
+            stakeholder="Salve Mundi"
+          />
+
+          <!-- <UiProject
+            to="/"
+            image-name=""
+            project-name="El Studio"
+            project-description="
+            Printpal is een app die mensen met depressie helpt door positieve berichten naar een pocketprinter te sturen. Gebruikers kunnen prints versturen en ontvangen, en chatten met anderen. Ik ontwikkelde deze app met mijn projectgroep in mijn tweede jaar ICT & Media Design voor een wedstrijd van Sogeti."
+            stakeholder="El Studio"
+          /> -->
+
+          <!-- <UiProject
             to="/"
             image-name="nore"
             project-name="Nore"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            In mijn eerste jaar ICT & Media Design creëerde ik met drie klasgenoten de branding voor Tessa Meester van de band NORE. We hebben veel gebruikersonderzoek gedaan en ontwikkelden zo een unieke branding en website voor deze Nederlandse indie pop-rockband. "
             stakeholder="Fontys Rockacademie"
           />
 
@@ -129,8 +141,7 @@
             image-name="fontys"
             project-name="Engineering & Technology in Practice"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            Ik heb gewerkt bij Fontys Centre of Expertise. Mijn taak was het toevoegen van projecten van studenten aan de Fontys website, promotieposters & Photoshop-sjablonen maken en LinkedIn-berichten schrijven. Ik heb ook veel geleerd over werken met content management systemen."
             stakeholder="Fontys Engineering"
           />
           <UiProject
@@ -138,15 +149,14 @@
             image-name="samu"
             project-name="Mediacommissie"
             project-description="
-            Warner Music kan op deze website een campagne starten voor een artiest om nieuwe volgers en luisteraars te generen. De gebruiker komt op een webpagina terecht met een countdown timer voor een nieuwe albumrelease, en heeft hier de mogelijkheid om de artiest te volgen.
-"
+            Ik studeer ICT aan Fontys Hogescholen en ben lid van Salve Mundi (de studieverenging). Sinds juni 2021 werk ik vrijwillig in de mediacommissie en ben sinds januari 2022 een jaar lang commissieleider geweest. Ik ontwerp promotiemateriaal, beheer Instagram en heb de website herontworpen."
             stakeholder="Salve Mundi"
-          />
+          /> -->
         </div>
-        <div>
+        <div class="py-8">
           <div
             v-motion-slide-visible-once-bottom
-            class="md:grid md:grid-cols-3 md:gap-3 mt-8 bg-white dark:bg-[#020520] py-7 rounded-3xl overflow-none"
+            class="md:grid md:grid-cols-3 md:gap-3 bg-white dark:bg-[#020520] py-7 rounded-3xl overflow-none"
           >
             <div class="mb-4 md:mb-0 text-center">
               <UiTypography class="mb-1">
@@ -157,7 +167,7 @@
                   ref="semesterCounter"
                   :start-amount="0"
                   separator=""
-                  :end-amount="6"
+                  :end-amount="7"
                   :duration="1.5"
                   :autoinit="false"
                 />
@@ -175,7 +185,7 @@
                   ref="projectCounter"
                   :start-amount="0"
                   separator=""
-                  :end-amount="38"
+                  :end-amount="39"
                   :duration="1.5"
                   :autoinit="false"
                 />
@@ -246,7 +256,7 @@ export default {
     handleScroll () {
       const scrollY = window.scrollY
 
-      if (scrollY >= 3500 && this.finishedCounting === false) {
+      if (scrollY >= 3000 && this.finishedCounting === false) {
         this.finishedCounting = true
         this.start()
       }
@@ -276,7 +286,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @font-face {
   font-family: "Poppins-Bold";
   src: url("../fonts/Poppins-Bold.woff") format("woff");

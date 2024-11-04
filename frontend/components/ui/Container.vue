@@ -1,10 +1,32 @@
 <template>
-  <div :class="[darkModeClass, 'gradient-background-light min-h-screen zoom-80 pb-[106px] pt-0.5 overflow-hidden']">
-    <div class="xl:max-w-[1900px] max-w-[1460px] mx-auto px-3 relative z-10">
-      <slot />
+  <div>
+    <div v-if="gradient" :class="[darkModeClass, 'gradient-background-light']">
+      <div class="pt-0.5 overflow-hidden'">
+        <div class="max-w-[1600px] mx-auto px-3 relative z-10">
+          <slot />
+        </div>
+      </div>
+    </div>
+    <div v-else>
+      <div class="pt-0.5 overflow-hidden'">
+        <div class="max-w-[1600px] mx-auto px-3 relative z-10">
+          <slot />
+        </div>
+      </div>
     </div>
   </div>
 </template>
+
+<script>
+export default defineComponent({
+  name: 'Container',
+  props: {
+    gradient: {
+      type: Boolean
+    }
+  }
+})
+</script>
 
 <style scoped>
 .zoom-80{

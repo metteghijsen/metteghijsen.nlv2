@@ -1,13 +1,13 @@
 <template>
-  <div :class="[darkModeClass, 'gradient-background-light']">
+  <div id="contact" :class="[darkModeClass, 'gradient-background-light']">
     <div class="flex justify-center">
-      <div class="w-full bg-white100 dark:bg-[#020520] grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 gap-2 lg:px-[400px] px-[200px] py-[120px]">
+      <div class="w-full bg-white100 dark:bg-[#020520] grid grid-cols-4 gap-2 lg:px-[400px] md:px-[200px] md:py-[120px] px-8 py-8 justify-center">
         <UiLogo image-name="fontys" invert to="https://www.fontys.nl/Home.htm" />
         <UiLogo image-name="kea" invert keep-inverted="" to="https://kea.dk/en/" />
         <UiLogo image-name="livewall" invert keep-inverted to="https://www.livewall.nl/" />
         <UiLogo image-name="sogeti" invert to="https://www.sogeti.nl/" />
 
-        <UiLogo image-name="9292" to="https://9292.nl/" class="p-4" />
+        <UiLogo image-name="9292" to="https://9292.nl/" class="md:p-4" />
         <UiLogo image-name="warnermusic" invert to="https://www.wmg.com/" />
         <UiLogo image-name="partou" to="https://www.werkenbijpartou.nl/?utm_source=googleads&utm_campaign=18773651246&utm_medium=ad&utm_content=670754134683&utm_term=werken+bij+partou&gclid=Cj0KCQjw06-oBhC6ARIsAGuzdw0MH2NWr98Skszax908DrasgF6UXzMTW2UV8SCRp436CjrR_p6BBcQaAvYkEALw_wcB" />
         <UiLogo image-name="salvemundi" invert to="https://www.salvemundi.nl" />
@@ -23,7 +23,7 @@
           Contacteer me dan vooral via email of sociale media. Spreek je daar!
         </UiTypography>
         <UiTypography type="p" size="paragraph-extra-small" class="mt-12">
-          Mette Ghijsen © 2021- {{ currentYear }}
+          Mette Ghijsen © 2021 - {{ currentYear }} • Update 2.1
         </UiTypography>
       </div>
       <div>

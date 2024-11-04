@@ -1,26 +1,26 @@
 <template>
   <div>
-    <div class="justify-center flex mb-[135px]">
-      <div class="bg-white100 dark:bg-[#020520] border-b-slate-200 dark:border-b-slate-600 border-b-2 py-4 flex flex-row items-center w-full fixed top-0 z-40">
+    <div class="justify-center flex">
+      <div class="bg-white100 dark:bg-[#020520] border-b-slate-200 dark:border-b-slate-600 border-b-2 lg:pb-2.5 lg:pt-3 py-3.5 flex flex-row items-center w-full fixed top-0 z-40">
         <NuxtLink v-if="isMenu" @click="toggleMenu">
-          <UiTypography type="p" size="heading4" class="font-bold pl-8 whitespace-nowrap">
+          <UiTypography type="p" size="heading4" class="font-bold pl-4 md:pl-6 whitespace-nowrap">
             Mette Ghijsen
           </UiTypography>
         </NuxtLink>
         <NuxtLink v-else to="/">
-          <UiTypography type="p" size="heading4" class="font-bold pl-8 whitespace-nowrap">
+          <UiTypography type="p" size="heading4" class="font-bold pl-4 md:pl-6 whitespace-nowrap">
             Mette Ghijsen
           </UiTypography>
         </NuxtLink>
         <div class="flex justify-end w-full">
           <div v-if="isMenu">
-            <button class="lg:hidden p-1 mr-10 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
-              <X class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
+            <button class="lg:hidden p-1 mr-4 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
+              <X class="h-2.5 w-2.5" :color="isDarkMode ? 'white' : 'black'" />
             </button>
           </div>
           <div v-else>
-            <button class="lg:hidden p-1 mr-10 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
-              <Menu class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
+            <button class="lg:hidden p-1 mr-4 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleMenu">
+              <Menu class="h-2.5 w-2.5" :color="isDarkMode ? 'white' : 'black'" />
             </button>
           </div>
         </div>
@@ -32,7 +32,7 @@
             class="px-6 link"
             :class="{ 'active-link': isActive(link.to) }"
           >
-            <UiTypography type="p" size="paragraph-small" :class="{ 'font-bold': isActive(link.to) }" class="whitespace-nowrap">
+            <UiTypography type="p" size="paragraph-extra-small" :class="{ 'font-bold': isActive(link.to) }" class="whitespace-nowrap">
               {{ link.text }}
             </UiTypography>
             <div
@@ -45,17 +45,17 @@
             />
           </router-link>
 
-          <button class="p-1 ml-12 dark:hover:bg-slate-700 hover:bg-slate-100 rounded-md ease-in-out transition-colors">
+          <!-- <button class="p-1 ml-12 dark:hover:bg-slate-700 hover:bg-slate-100 rounded-md ease-in-out transition-colors">
             <Languages class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
-          </button>
+          </button> -->
 
-          <NuxtLink to="https://github.com/metteghijsen/metteghijsen.nlv2" class="p-1 mx-2 mr-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md ease-in-out transition-colors">
-            <Github class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
+          <NuxtLink to="https://github.com/metteghijsen/metteghijsen.nlv2" class="p-1 mx-2 mr-2 ml-11 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md ease-in-out transition-colors">
+            <Github class="h-2.5 w-2.5" :color="isDarkMode ? 'white' : 'black'" />
           </NuxtLink>
 
           <button class="p-1 mr-10 dark:hover:bg-slate-700 hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
             <Moon v-if="isDarkMode" class="h-3 w-3" color="white" />
-            <Sun v-else class="h-3 w-3" color="black" />
+            <Sun v-else class="h-2.5 w-2.5" color="black" />
           </button>
         </div>
       </div>
@@ -81,17 +81,17 @@
             </router-link>
 
             <div class="flex justify-center items-center w-full">
-              <button class="p-1 my-4 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
+              <!-- <button class="p-1 my-4 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
                 <Languages class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
-              </button>
+              </button> -->
 
               <NuxtLink to="https://github.com/metteghijsen/semester6-website" class="p-1 hover:bg-slate-100 dark:hover:bg-black rounded-md ease-in-out transition-colors">
-                <Github class="h-3 w-3" :color="isDarkMode ? 'white' : 'black'" />
+                <Github class="h-2.5 w-2.5" :color="isDarkMode ? 'white' : 'black'" />
               </NuxtLink>
 
               <button class="p-1 my-4 dark:hover:bg-[#020520] hover:bg-slate-100 rounded-md ease-in-out transition-colors" @click="toggleDarkMode">
                 <Moon v-if="isDarkMode" class="h-3 w-3" color="white" />
-                <Sun v-else class="h-3 w-3" color="black" />
+                <Sun v-else class="h-2.5 w-2.5" color="black" />
               </button>
             </div>
           </div>
@@ -103,7 +103,7 @@
 
 <script setup>
 import { ref, onMounted, watch } from 'vue'
-import { Sun, Moon, Github, Menu, X, Languages } from 'lucide-vue-next'
+import { Sun, Moon, Github, Menu, X } from 'lucide-vue-next'
 
 const isDarkMode = ref(false)
 const isMenu = ref(false)
@@ -136,8 +136,8 @@ watch(isDarkMode, (newVal) => {
 })
 
 const links = [
-  { text: 'About', to: '#about' },
-  { text: 'Cases', to: '#cases' },
+  { text: 'About', to: '/#about' },
+  { text: 'Cases', to: '/#cases' },
   { text: 'Contact', to: '#contact' }
 ]
 
