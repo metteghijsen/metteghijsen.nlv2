@@ -4,7 +4,7 @@
       <UiProjectHeader
         header-text="Onderwegapp"
         description-text="Stel jouw ultieme reisafspeellijst samen met de Onderwegapp van 9292."
-        image-name="onderwegapp"
+        image-name="onderwegappv2"
       />
       <UiTextbox id="firstarticle" title-text="Stel een afspeellijst samen voor onderweg">
         De OnderwegApp is een applicatie die je kunt gebruiken vanuit de 9292 app bij het plannen van je reis. Vul in de
