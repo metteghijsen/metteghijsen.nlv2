@@ -35,7 +35,7 @@
         </div>
 
         <div v-motion-slide-visible-once-bottom class="py-4 w-full h-max flex lg:flex-row md:flex-row flex-col items-center">
-          <NuxtImg src="/img/mette.png" alt="mette" class="rounded-3xl md:w-1/3 w-full mr-4 object-cover" />
+          <NuxtImg src="/img/profielfoto.png" alt="mette" class="rounded-3xl md:w-1/3 w-full mr-4 object-cover" />
           <div class="pt-7 md:p-7 w-full">
             <UiTypography type="p" size="paragraph-small" class="pb-2">
               Ik ben Mette, {{ age }} jaar oud en ik kom uit Eindhoven 🇳🇱. Ik ben een front-end developer en
