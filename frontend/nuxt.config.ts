@@ -93,8 +93,8 @@ export default defineNuxtConfig({
           'form-action': ["'self'"],
           'frame-ancestors': ["'self'"],
           'img-src': ["'self'", 'data:'],
-          'object-src': ["'none'"],
-          'script-src-attr': ["'none'"],
+          'object-src': ["'none','self'"],
+          'script-src-attr': ["'none','self'"],
           'style-src': ["'self'", 'https:', "'unsafe-inline'"],
           'upgrade-insecure-requests': true
         },
