@@ -1,4 +1,5 @@
 import eslintPlugin from 'vite-plugin-eslint'
+
 export default defineNuxtConfig({
   app: {
     // https://nuxt.com/docs/api/configuration/nuxt-config#head
@@ -77,7 +78,9 @@ export default defineNuxtConfig({
 
   // https://v1.image.nuxtjs.org/configuration
   image: {
-    // Options
+    providers: {
+      ipx: {}
+    }
   },
 
   security: {
@@ -101,5 +104,7 @@ export default defineNuxtConfig({
         route: '/**'
       }
     }
-  }
+  },
+
+  compatibilityDate: '2025-02-12'
 })
