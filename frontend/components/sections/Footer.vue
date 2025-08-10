@@ -30,9 +30,9 @@
         <UiTypography type="h4" size="heading4" class="pb-0.5">
           Say hello
         </UiTypography>
-        <a href="mailto:info@metteghijsen.nl" target="_blank">
+        <a href="mailto:mette.ghijsen@gmail.com" target="_blank">
           <UiTypography type="p" size="paragraph-extra-small" class="pb-6 opacity-70">
-            →  info@metteghijsen.nl
+            →  mette.ghijsen@gmail.com
           </UiTypography>
         </a>
         <UiTypography type="h4" size="heading4" class="pb-0.5">
