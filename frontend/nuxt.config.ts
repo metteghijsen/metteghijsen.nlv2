@@ -7,10 +7,10 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
-        { hid: 'description', name: 'description', content: 'Jouw beschrijving hier' },
-        { hid: 'og:image', property: 'og:image', content: '/img/mette.png' },
+        { hid: 'description', name: 'description', content: 'Welkom op de portfolio website van Mette Ghijsen, front-end developer en UX-designer uit Eindhoven.' },
+        { hid: 'og:image', property: 'og:image', content: '/img/favicon.ico' },
         { hid: 'og:title', property: 'og:title', content: 'Mette Ghijsen' },
-        { hid: 'og:description', property: 'og:description', content: 'Jouw beschrijving hier' },
+        { hid: 'og:description', property: 'og:description', content: 'Ontdek mijn projecten, vaardigheden en verhaal als webdeveloper en designer.' },
         { hid: 'og:site_name', property: 'og:site_name', content: 'Mette Ghijsen' }
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
