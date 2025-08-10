@@ -42,12 +42,9 @@
               UX-designer. Welkom op mijn portfolio website!
               <br><br>
               Ik ben altijd al graag creatief bezig geweest, wat uitstekend samengaat met mijn enthousiasme voor
-              computers. Op dit moment zit ik in het vierde jaar van mijn studie ICT & Media Design aan Fontys
-              Hogeschool in Eindhoven, en volg ik de minor Digital Product Development aan de Universiteit van Kunst &
-              Technologie in Kopenhagen 🇩🇰.
-              In februari 2025 ga ik beginnen met mijn afstudeerstage, en ik ben druk op zoek naar een nieuwe uitdaging!
-              Mijn ambitie is om front-end webdeveloper te worden, gespecialiseerd in Vue en Nuxt. Ik sta ervoor open
-              om ook nog bij te leren over React en NextJS.
+              computers. In juli 2025 ben ik afgestudeerd in ICT & Media Design aan Fontys Hogeschool in Eindhoven. Tijdens mijn studie volgde ik ook de minor Digital Product Development aan de Universiteit van Kunst & Technologie in Kopenhagen 🇩🇰.
+              <br><br>
+              Momenteel ben ik bezig met mijn premaster Communication and Information Sciences aan Tilburg University. Mijn ambitie is om verder te groeien als front-end webdeveloper, gespecialiseerd in Vue en Nuxt, met ruimte om mijn kennis in React en Next.js verder uit te breiden.
               <br><br>
               Wanneer ik niet aan het werk ben, doe ik vrijwilligerswerk bij de studievereniging van Fontys ICT, genaamd
               Salve Mundi. Hier versterk ik de mediacommissie door het maken van promotiemateriaal, en help ik de
@@ -59,18 +56,47 @@
             </UiTypography>
           </div>
         </div>
-        <div v-motion-slide-visible-once-bottom class="w-full lg:flex lg:flex-row grid grid-cols-5 gap-1">
-          <UiLogoCompetence class="dark:flex hidden" image-name="htmldark" skill-name="HTML" skill-link="https://www.w3.org/html/" />
-          <UiLogoCompetence class="dark:flex hidden" image-name="cssdark" skill-name="CSS" skill-link="https://www.w3.org/Style/CSS/Overview.en.html" />
-          <UiLogoCompetence image-name="tailwind" skill-name="Tailwind CSS" skill-link="https://tailwindcss.com/" />
-          <UiLogoCompetence image-name="sass" skill-name="Sass" skill-link="https://sass-lang.com/" />
-          <UiLogoCompetence image-name="javascript" skill-name="JavaScript" skill-link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
-          <UiLogoCompetence image-name="typescript" skill-name="TypeScript" skill-link="https://www.typescriptlang.org/" />
-          <UiLogoCompetence image-name="vue" skill-name="Vue.js" skill-link="https://vuejs.org/" />
-          <UiLogoCompetence image-name="nuxt" skill-name="Nuxt.js" skill-link="https://nuxt.com/" />
-          <UiLogoCompetence image-name="photoshop" skill-name="Adobe Photoshop" skill-link="https://www.adobe.com/products/photoshop.html" />
-          <UiLogoCompetence image-name="figma" skill-name="Figma" skill-link="https://www.figma.com/" />
-        </div>
+<div v-motion-slide-visible-once-bottom class="w-full lg:flex lg:flex-row grid grid-cols-5 gap-1">
+  <!-- HTML -->
+  <UiLogoCompetence class="flex dark:hidden" image-name="html" skill-name="HTML" skill-link="https://www.w3.org/html/" />
+  <UiLogoCompetence class="hidden dark:flex" image-name="htmldark" skill-name="HTML" skill-link="https://www.w3.org/html/" />
+
+  <!-- CSS -->
+  <UiLogoCompetence class="flex dark:hidden" image-name="css" skill-name="CSS" skill-link="https://www.w3.org/Style/CSS/Overview.en.html" />
+  <UiLogoCompetence class="hidden dark:flex" image-name="cssdark" skill-name="CSS" skill-link="https://www.w3.org/Style/CSS/Overview.en.html" />
+
+  <!-- Tailwind (geen aparte dark mode variant) -->
+  <UiLogoCompetence image-name="tailwind" skill-name="Tailwind CSS" skill-link="https://tailwindcss.com/" />
+
+  <!-- Sass -->
+  <UiLogoCompetence image-name="sass" skill-name="Sass" skill-link="https://sass-lang.com/" />
+
+  <!-- JavaScript -->
+  <UiLogoCompetence image-name="javascript" skill-name="JavaScript" skill-link="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+
+  <!-- TypeScript -->
+  <UiLogoCompetence image-name="typescript" skill-name="TypeScript" skill-link="https://www.typescriptlang.org/" />
+
+  <!-- Vue.js -->
+  <UiLogoCompetence image-name="vue" skill-name="Vue.js" skill-link="https://vuejs.org/" />
+
+  <!-- Nuxt.js -->
+  <UiLogoCompetence image-name="nuxt" skill-name="Nuxt.js" skill-link="https://nuxt.com/" />
+
+  <!-- React.js -->
+  <UiLogoCompetence image-name="react" skill-name="React.js" skill-link="https://react.dev/" />
+
+  <!-- Next.js -->
+  <UiLogoCompetence class="flex dark:hidden" image-name="next" skill-name="Next.js" skill-link="https://nextjs.org/" />
+  <UiLogoCompetence class="hidden dark:flex" image-name="nextdark" skill-name="Next.js" skill-link="https://nextjs.org/" />
+
+  <!-- Adobe Photoshop -->
+  <UiLogoCompetence image-name="photoshop" skill-name="Adobe Photoshop" skill-link="https://www.adobe.com/products/photoshop.html" />
+
+  <!-- Figma -->
+  <UiLogoCompetence image-name="figma" skill-name="Figma" skill-link="https://www.figma.com/" />
+</div>
+
       </div>
     </div>
     <UiContainer gradient>
@@ -143,14 +169,6 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
             project-description="
             Ik heb gewerkt bij Fontys Centre of Expertise. Mijn taak was het toevoegen van projecten van studenten aan de Fontys website, promotieposters & Photoshop-sjablonen maken en LinkedIn-berichten schrijven. Ik heb ook veel geleerd over werken met content management systemen."
             stakeholder="Fontys Engineering"
-          />
-          <UiProject
-            to="/"
-            image-name="samu"
-            project-name="Mediacommissie"
-            project-description="
-            Ik studeer ICT aan Fontys Hogescholen en ben lid van Salve Mundi (de studieverenging). Sinds juni 2021 werk ik vrijwillig in de mediacommissie en ben sinds januari 2022 een jaar lang commissieleider geweest. Ik ontwerp promotiemateriaal, beheer Instagram en heb de website herontworpen."
-            stakeholder="Salve Mundi"
           /> -->
         </div>
         <div class="py-8">
@@ -167,7 +185,7 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
                   ref="semesterCounter"
                   :start-amount="0"
                   separator=""
-                  :end-amount="7"
+                  :end-amount="8"
                   :duration="1.5"
                   :autoinit="false"
                 />
