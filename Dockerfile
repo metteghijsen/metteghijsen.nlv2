@@ -2,26 +2,27 @@
 FROM node:20-alpine AS build
 WORKDIR /app
 
-# Install deps (better layer caching)
-COPY package*.json ./
+# Copy only the Nuxt frontend folder
+COPY ./frontend/package*.json ./
 RUN npm ci || npm install
 
-# Copy the rest and generate static site
-COPY . .
-# Nuxt 3:
+# Copy the full frontend source
+COPY ./frontend ./
+
+# Generate static site (Nuxt 3)
 RUN npx nuxi generate -y
-# Nuxt 2 (instead): 
+# If you're using Nuxt 2, comment the line above and uncomment below:
 # RUN npx nuxt generate
 
-# --- Runtime stage: Apache httpd ---
+# --- Runtime stage (Apache) ---
 FROM httpd:2.4
 
-# Optional: replace base httpd.conf with our own to include vhost + SPA fallback
+# Copy Apache configuration files
 COPY ./apache/httpd.conf /usr/local/apache2/conf/httpd.conf
 COPY ./apache/metteghijsen.nl.conf /usr/local/apache2/conf/extra/metteghijsen.nl.conf
 
-# Copy Nuxt output into htdocs
-# Nuxt 3:
+# Copy generated static site from build stage to Apache's htdocs
+# Nuxt 3 output:
 COPY --from=build /app/.output/public/ /usr/local/apache2/htdocs/
-# Nuxt 2 (instead):
+# Nuxt 2 output (fallback):
 # COPY --from=build /app/dist/ /usr/local/apache2/htdocs/
