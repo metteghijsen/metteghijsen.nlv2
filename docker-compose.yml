@@ -5,4 +5,16 @@ services:
     ports:
       - "8015:80"
     deploy:
-      replicas: 1
+      replicas: 2                 # >=2 for true zero downtime
+      update_config:
+        parallelism: 1            # update one task at a time
+        order: start-first        # start new task before stopping old
+        delay: 5s                 # small pause between tasks
+        failure_action: rollback  # auto-rollback if update fails
+        monitor: 30s              # watch new task after it comes up
+        max_failure_ratio: 0.1
+      rollback_config:
+        parallelism: 1
+        order: stop-first
+      restart_policy:
+        condition: on-failure
