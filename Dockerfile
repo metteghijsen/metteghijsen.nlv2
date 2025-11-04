@@ -15,7 +15,7 @@ RUN npx nuxi generate -y
 # RUN npx nuxt generate
 
 # --- Runtime stage (Apache) ---
-FROM httpd:2.4
+FROM httpd:latest
 
 # Copy Apache configuration files
 COPY ./apache/httpd.conf /usr/local/apache2/conf/httpd.conf
