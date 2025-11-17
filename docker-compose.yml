@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  web:
+    image: ghcr.io/damosso/metteghijsen.nlv2-frontend:latest
+    ports:
+      - "8015:80"
+    deploy:
+      replicas: 1
+      update_config:
+        order: start-first
+        parallelism: 1
+        delay: 5s
+        failure_action: rollback
+        monitor: 30s
+      restart_policy:
+        condition: on-failure
