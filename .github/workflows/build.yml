@@ -7,7 +7,7 @@ on:
 
 env:
   # Use lowercase for GHCR namespace
-  IMAGE_NAME: ghcr.io/damosso/metteghijsen.nlv2
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build:
