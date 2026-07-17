@@ -1,22 +1,101 @@
 import eslintPlugin from 'vite-plugin-eslint'
 
 export default defineNuxtConfig({
-  app: {
-    head: {
-      title: 'Mette Ghijsen',
-      meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { charset: 'utf-8' },
-        { hid: 'description', name: 'description', content: 'Welkom op de portfolio website van Mette Ghijsen, front-end developer en UX-designer uit Eindhoven.' },
-        { hid: 'og:image', property: 'og:image', content: '/img/favicon.ico' },
-        { hid: 'og:title', property: 'og:title', content: 'Mette Ghijsen' },
-        { hid: 'og:description', property: 'og:description', content: 'Ontdek mijn projecten, vaardigheden en verhaal als webdeveloper en designer.' },
-        { hid: 'og:site_name', property: 'og:site_name', content: 'Mette Ghijsen' }
-      ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-      noscript: [{ children: 'JavaScript is required' }]
-    }
-  },
+app: {
+  head: {
+    title: 'Mette Ghijsen | Front-end Developer & UX Designer',
+    htmlAttrs: {
+      lang: 'nl'
+    },
+    meta: [
+      {
+        charset: 'utf-8'
+      },
+
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+
+      {
+        name: 'description',
+        content:
+          'Portfolio van Mette Ghijsen, front-end developer en UX designer. Bekijk projecten op het gebied van webdevelopment, branding, UI/UX en interactieve digitale ervaringen.'
+      },
+
+      {
+        name: 'robots',
+        content: 'index,follow'
+      },
+
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+
+      {
+        property: 'og:title',
+        content: 'Mette Ghijsen | Front-end Developer & UX Designer'
+      },
+
+      {
+        property: 'og:description',
+        content:
+          'Ontdek mijn portfolio met websites, webapplicaties, UI/UX designs en creatieve digitale projecten.'
+      },
+
+      {
+        property: 'og:image',
+        content: 'https://metteghijsen.nl/img/og-image.jpg'
+      },
+
+      {
+        property: 'og:url',
+        content: 'https://metteghijsen.nl'
+      },
+
+      {
+        property: 'og:site_name',
+        content: 'Mette Ghijsen'
+      },
+
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+
+      {
+        name: 'twitter:title',
+        content: 'Mette Ghijsen | Front-end Developer & UX Designer'
+      },
+
+      {
+        name: 'twitter:description',
+        content:
+          'Ontdek mijn portfolio met websites, webapplicaties, UI/UX designs en creatieve digitale projecten.'
+      },
+
+      {
+        name: 'twitter:image',
+        content: 'https://metteghijsen.nl/img/og-image.jpg'
+      }
+    ],
+
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      }
+    ],
+
+    noscript: [
+      {
+        children: 'JavaScript is required'
+      }
+    ]
+  }
+},
 
   vite: {
     plugins: process.env.NODE_ENV === 'development' ? [eslintPlugin()] : [],
@@ -90,6 +169,10 @@ export default defineNuxtConfig({
       routes: ['/']
     }
   },
+
+  robots: {
+  allow: ['/']
+},
 
   compatibilityDate: '2025-02-12'
 })
