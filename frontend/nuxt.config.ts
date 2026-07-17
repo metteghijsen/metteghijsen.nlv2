@@ -82,6 +82,8 @@ app: {
     ],
 
     link: [
+      {  rel: 'canonical',
+    href: 'https://metteghijsen.nl'},
       {
         rel: 'icon',
         type: 'image/x-icon',
@@ -120,7 +122,8 @@ app: {
     '@vueuse/nuxt',
     'nuxt-security',
     '@nuxtjs/robots',
-    '@vueuse/motion/nuxt'
+    '@vueuse/motion/nuxt',
+    '@nuxtjs/sitemap'
   ],
 
   runtimeConfig: {
@@ -172,6 +175,10 @@ app: {
 
   robots: {
   allow: ['/']
+},
+
+site: {
+  url: 'https://metteghijsen.nl'
 },
 
   compatibilityDate: '2025-02-12'

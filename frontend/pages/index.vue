@@ -239,6 +239,47 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
 </template>
 
 <script>
+useSeoMeta({
+  title: 'Mette Ghijsen | Front-end Developer & UX Designer',
+  description:
+    'Online portfolio van Mette Ghijsen, front-end developer en UX designer uit Noord-Brabant.'
+})
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Mette Ghijsen',
+        url: 'https://metteghijsen.nl',
+        jobTitle: 'Front-end Developer & UX Designer',
+          knowsAbout: [
+    'Vue.js',
+    'Nuxt 3',
+    'React.js',
+    'Next.js',
+    'TypeScript',
+    'Tailwind CSS',
+    'UI Design',
+    'UX Design',
+    'Web Development'
+  ],
+  alumniOf: {
+    '@type': 'CollegeOrUniversity',
+    name: 'Fontys Hogescholen'
+  },
+        image: 'https://metteghijsen.nl/img/profielfoto.png',
+        sameAs: [
+          'https://www.linkedin.com/in/mette-g-857594203/',
+          'https://github.com/metteghijsen'
+        ]
+      })
+    }
+  ]
+})
+
 import Vue3autocounter from 'vue3-autocounter'
 export default {
   name: 'Numbers',
