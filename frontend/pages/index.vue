@@ -171,49 +171,6 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
             stakeholder="Fontys Engineering"
           /> -->
         </div>
-        <div class="py-8">
-          <div
-            v-motion-slide-visible-once-bottom
-            class="md:grid md:grid-cols-2 md:gap-3 bg-white dark:bg-[#020520] py-7 rounded-3xl overflow-none"
-          >
-            <div class="mb-4 md:mb-0 text-center">
-              <UiTypography class="mb-1">
-                Meer dan
-              </UiTypography>
-              <UiTypography type="h1" size="heading1">
-                <vue3-autocounter
-                  ref="projectCounter"
-                  :start-amount="0"
-                  separator=""
-                  :end-amount="43"
-                  :duration="1.5"
-                  :autoinit="false"
-                />
-              </UiTypography>
-              <UiTypography class="mt-1" type="h3" size="heading3">
-                projecten
-              </UiTypography>
-            </div>
-            <div class="text-center">
-              <UiTypography class="mb-1">
-                Ervaring in ICT
-              </UiTypography>
-              <UiTypography type="h1" size="heading1">
-                <vue3-autocounter
-                  ref="deliverableCounter"
-                  :start-amount="0"
-                  separator=""
-                  :end-amount="5"
-                  :duration="1.5"
-                  :autoinit="false"
-                />
-              </UiTypography>
-              <UiTypography class="mt-1" type="h3" size="heading3">
-                jaar
-              </UiTypography>
-            </div>
-          </div>
-        </div>
       </div>
     </UiContainer>
     <SectionsFooter />
@@ -265,18 +222,7 @@ useHead({
 </script>
 
 <script>
-import Vue3autocounter from 'vue3-autocounter'
 export default {
-  name: 'Numbers',
-  components: {
-    'vue3-autocounter': Vue3autocounter
-  },
-  data () {
-    return {
-      age: this.calculateAge(),
-      finishedCounting: false
-    }
-  },
   mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
