@@ -174,36 +174,18 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
         <div class="py-8">
           <div
             v-motion-slide-visible-once-bottom
-            class="md:grid md:grid-cols-3 md:gap-3 bg-white dark:bg-[#020520] py-7 rounded-3xl overflow-none"
+            class="md:grid md:grid-cols-2 md:gap-3 bg-white dark:bg-[#020520] py-7 rounded-3xl overflow-none"
           >
             <div class="mb-4 md:mb-0 text-center">
               <UiTypography class="mb-1">
-                Ik heb nu afgerond
-              </UiTypography>
-              <UiTypography type="h1" size="heading1">
-                <vue3-autocounter
-                  ref="semesterCounter"
-                  :start-amount="0"
-                  separator=""
-                  :end-amount="8"
-                  :duration="1.5"
-                  :autoinit="false"
-                />
-              </UiTypography>
-              <UiTypography class="mt-1" type="h3" size="heading3">
-                semesters
-              </UiTypography>
-            </div>
-            <div class="mb-4 md:mb-0 text-center">
-              <UiTypography class="mb-1">
-                Met in totaal meer dan
+                Meer dan
               </UiTypography>
               <UiTypography type="h1" size="heading1">
                 <vue3-autocounter
                   ref="projectCounter"
                   :start-amount="0"
                   separator=""
-                  :end-amount="39"
+                  :end-amount="43"
                   :duration="1.5"
                   :autoinit="false"
                 />
@@ -221,7 +203,7 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
                   ref="deliverableCounter"
                   :start-amount="0"
                   separator=""
-                  :end-amount="4"
+                  :end-amount="5"
                   :duration="1.5"
                   :autoinit="false"
                 />
@@ -238,7 +220,7 @@ Noise Control is een app die gymdocenten in het basisonderwijs helpt om inzicht 
   </div>
 </template>
 
-<script>
+<script setup>
 useSeoMeta({
   title: 'Mette Ghijsen | Front-end Developer & UX Designer',
   description:
@@ -280,6 +262,9 @@ useHead({
   ]
 })
 
+</script>
+
+<script>
 import Vue3autocounter from 'vue3-autocounter'
 export default {
   name: 'Numbers',
